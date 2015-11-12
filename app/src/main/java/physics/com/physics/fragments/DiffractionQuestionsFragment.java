@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +20,7 @@ import java.util.List;
 
 import physics.com.physics.R;
 import physics.com.physics.helper.DiffractionHelper;
+import physics.com.physics.helper.QuestionsHelper;
 import physics.com.physics.helper.TaskHelper;
 import physics.com.physics.task.AnswerTask;
 
@@ -70,6 +72,12 @@ public class DiffractionQuestionsFragment extends Fragment {
         confirm = (Button)view.findViewById(R.id.diffraction_questions_btn_confirm);
         clean = (Button)view.findViewById(R.id.diffraction_questions_btn_clean);
 
+        this.settingListeners();
+
+        return view;
+    }
+
+    private void settingListeners() {
 
         radioGroupQ1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
             @Override
@@ -78,8 +86,11 @@ public class DiffractionQuestionsFragment extends Fragment {
                     String userAns = null;
                     RadioButton  btnq1 = (RadioButton) group.getChildAt(i);
                     if(btnq1.getId() == checkedId) {
-                        userAns =btnq1.getText().toString();
-                        map.put(1L, userAns);
+                        userAns = btnq1.getText().toString();
+                        //checking if has an answer
+                        if(!userAns.equals("")) {
+                            map.put(1L, userAns);
+                        }
                     }
                 }
             }});
@@ -92,7 +103,10 @@ public class DiffractionQuestionsFragment extends Fragment {
                     RadioButton btn = (RadioButton) group.getChildAt(i);
                     if(btn.getId() == checkedId) {
                         userAns = btn.getText().toString();
-                        map.put(2L, userAns);
+                        //checking if has an answer
+                        if(!userAns.equals("")) {
+                            map.put(2L, userAns);
+                        }
                     }
                 }
             }});
@@ -100,10 +114,16 @@ public class DiffractionQuestionsFragment extends Fragment {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(map.size() < 2){
-                    Log.d("Responda Todas!", "");
-                }else{
-                    new AnswerTask(map,taskHelper).execute();
+                if (map.size() < 2) {
+                    Toast.makeText(getContext(), "Há questões sem resposta!", Toast.LENGTH_LONG).show();
+                } else {
+                    new AnswerTask(map, taskHelper).execute();
+
+                    //locking up all radio buttons
+                    for (int i = 0; i < radioGroupQ1.getChildCount(); i++) {
+                        radioGroupQ1.getChildAt(i).setEnabled(false);
+                        radioGroupQ2.getChildAt(i).setEnabled(false);
+                    }
                 }
             }
         });
@@ -119,7 +139,5 @@ public class DiffractionQuestionsFragment extends Fragment {
                 ft.detach(DiffractionQuestionsFragment.this).attach(DiffractionQuestionsFragment.this).commit();
             }
         });
-
-        return view;
     }
 }

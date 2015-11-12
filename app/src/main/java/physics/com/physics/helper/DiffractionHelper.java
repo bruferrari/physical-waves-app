@@ -37,15 +37,13 @@ public class DiffractionHelper {
 
     public DiffractionHelper(View view) {
         this.view = view;
+
     }
 
     public void initializeUIElements() {
 
         imageViewCorrectionQ1 = (ImageView) view.findViewById(R.id.diffraction_question_correction_1);
         imageViewCorrectionQ2 = (ImageView) view.findViewById(R.id.diffraction_question_correction_2);
-
-        viewImages.add(imageViewCorrectionQ1);
-        viewImages.add(imageViewCorrectionQ2);
 
         imageQuestion1 = (ImageView)view.findViewById(R.id.image_test_question1);
         ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.diffraction_progress_q1);
@@ -58,6 +56,11 @@ public class DiffractionHelper {
         new ResourceImageTask(imageQuestion2, BASE_URL + "/3/question/1", pb2)
                 .execute();
 
+    }
+
+    private void setCorrectionsOnList() {
+        viewImages.add(imageViewCorrectionQ1);
+        viewImages.add(imageViewCorrectionQ2);
     }
 
     public HashMap<Long, String> compareAnswers(HashMap<Long, String> mapServer, HashMap<Long, String> userAnswers){
@@ -81,6 +84,7 @@ public class DiffractionHelper {
 
     public void settingImagesAndExplanation(HashMap<Long, String> output) {
         Long i = 1L; //incica questão 1
+        this.setCorrectionsOnList();
         ListIterator it = viewImages.listIterator(); //intarador na lista de imageview de cadas questão (correct, wrong)
         while(it.hasNext()){
             for (HashMap.Entry pair : output.entrySet()) { //pair para chave e valor que recebemos, verificamos respostas corretas e erradas
