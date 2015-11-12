@@ -4,6 +4,7 @@
     <string name="tab_material">TEXTO</string>
     <string name="tab_videos">VÍDEOS</string>
     <string name="tab_tests">EXERCÍCIOS</string>
+    <string name="tests_title">Exercícios</string>
 
     <string name="menu_credits">Créditos</string>
     <string name="menu_material">Material Didático</string>

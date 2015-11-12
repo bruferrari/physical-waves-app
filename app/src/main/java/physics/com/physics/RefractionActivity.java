@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import physics.com.physics.adapters.ViewPagerAdapter;
 import physics.com.physics.fragments.OneFragment;
 import physics.com.physics.fragments.RefractionMaterialFragment;
+import physics.com.physics.fragments.RefractionQuestionsFragment;
 import physics.com.physics.fragments.RefractionVideosFragment;
 
 /**
@@ -47,7 +48,7 @@ public class RefractionActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new RefractionMaterialFragment(), getResources().getString(R.string.tab_material));
         adapter.addFragment(new RefractionVideosFragment(), getResources().getString(R.string.tab_videos));
-        adapter.addFragment(new OneFragment(), getResources().getString(R.string.tab_tests));
+        adapter.addFragment(new RefractionQuestionsFragment(), getResources().getString(R.string.tab_tests));
         viewPager.setAdapter(adapter);
     }
 

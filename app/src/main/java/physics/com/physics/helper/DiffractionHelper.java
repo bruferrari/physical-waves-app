@@ -1,26 +1,20 @@
 package physics.com.physics.helper;
 
-import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
 import physics.com.physics.R;
-import physics.com.physics.model.Image;
 import physics.com.physics.task.ResourceImageTask;
 
 /**
@@ -29,21 +23,13 @@ import physics.com.physics.task.ResourceImageTask;
 public class DiffractionHelper {
 
     private View view;
-
-    private ResourceHelper resourceHelper;
-
     private ImageView imageQuestion1;
     private ImageView imageQuestion2;
+    private ImageView imageViewCorrectionQ1;
+    private ImageView imageViewCorrectionQ2;
+    private List<ImageView> viewImages = new ArrayList<>();
 
-    private ImageView imageViewCorrectQuestion1;
-    private ImageView imageViewWorongQuestion1;
-
-
-    List<ImageView> viewImages = new ArrayList<>();
-
-
-    private static final String BASE_URL = "http://ec2-52-23-232-114.compute-1.amazonaws.com:8080/physics-api/content";
-
+    private static final String BASE_URL = "http://ec2-52-23-232-114.compute-1.amazonaws.com:8080/physics-api/questions";
 
     public DiffractionHelper(){
 
@@ -51,24 +37,25 @@ public class DiffractionHelper {
 
     public DiffractionHelper(View view) {
         this.view = view;
-        resourceHelper = new ResourceHelper();
-
     }
 
-
     public void initializeUIElements() {
-        imageViewCorrectQuestion1 = (ImageView) view.findViewById(R.id.r1);
-        imageViewWorongQuestion1 = (ImageView) view.findViewById(R.id.r1W);
 
-        viewImages.add(imageViewCorrectQuestion1);
-        viewImages.add(imageViewWorongQuestion1);
+        imageViewCorrectionQ1 = (ImageView) view.findViewById(R.id.diffraction_question_correction_1);
+        imageViewCorrectionQ2 = (ImageView) view.findViewById(R.id.diffraction_question_correction_2);
+
+        viewImages.add(imageViewCorrectionQ1);
+        viewImages.add(imageViewCorrectionQ2);
 
         imageQuestion1 = (ImageView)view.findViewById(R.id.image_test_question1);
+        ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.diffraction_progress_q1);
         imageQuestion2 = (ImageView)view.findViewById(R.id.image_test_question2);
+        ProgressBar pb2 = (ProgressBar) view.findViewById(R.id.diffraction_progress_q2);
 
-        new ResourceImageTask(imageQuestion1, BASE_URL + "/2/image/1")
+        new ResourceImageTask(imageQuestion1, BASE_URL + "/3/question/1",progressBar)
                 .execute();
-        new ResourceImageTask(imageQuestion2, BASE_URL + "/2/image/1")
+
+        new ResourceImageTask(imageQuestion2, BASE_URL + "/3/question/1", pb2)
                 .execute();
 
     }
@@ -92,59 +79,93 @@ public class DiffractionHelper {
         return finalAnswers;
     }
 
-
-    public void settingImagensAndExplanation(HashMap<Long, String> output) {
+    public void settingImagesAndExplanation(HashMap<Long, String> output) {
         Long i = 1L; //incica questão 1
         ListIterator it = viewImages.listIterator(); //intarador na lista de imageview de cadas questão (correct, wrong)
         while(it.hasNext()){
-                for (HashMap.Entry pair : output.entrySet()) { //pair para chave e valor que recebemos, verificamos respostas corretas e erradas
-                            if(pair.getKey().equals(i) && pair.getValue().equals("C")){ //se chave igual a questão "i" e valor igual a "C" (Correta)
-                                Object v = it.next(); //Pega primeiro objeto do interador
-                                if(v instanceof ImageView){ //verifica se é uma imageview
-                                    ((ImageView) v).setImageResource(R.mipmap.ic_action_done_all);//seta imageview "Correct" na questão
-                                }
-                                it.nextIndex();//manda para próximo indice...proxima imagem e vai para o fim do for indo para proxima questão
-                            }
-                            else{
-                                Object v = it.next();
-                                if(v instanceof ImageView){
-                                    ((ImageView) v).setImageResource(R.mipmap.ic_navigation_close);//seta imagem incorreta
-                                }
-                                it.nextIndex();//próximo
-                            }
-                i++;//incremeta o numero da questão
-                }
+            for (HashMap.Entry pair : output.entrySet()) { //pair para chave e valor que recebemos, verificamos respostas corretas e erradas
+                if(pair.getKey().equals(i) && pair.getValue().equals("C")){ //se chave igual a questão "i" e valor igual a "C" (Correta)
+                    Object v = it.next(); //Pega primeiro objeto do interador
+                    if(v instanceof ImageView){ //verifica se é uma imageview
+                        ((ImageView) v).setImageResource(R.drawable.check);//seta imageview "Correct" na questão
+                    }
+                    it.nextIndex();//manda para próximo indice...proxima imagem e vai para o fim do for indo para proxima questão
+                } else {
+                    Object v = it.next();
+                    if(v instanceof ImageView) {
+                        ((ImageView) v).setImageResource(R.drawable.uncheck);//seta imagem incorreta
+                    }
+                    it.nextIndex();
+                } i++;
+            }
         }
     }
 
-
     public void openDialog(Fragment fragment, HashMap<Long, String> explanation){
         List<String> listCorrects = new ArrayList<>(explanation.values());
-        int total = 1;
-        for(int i = 1; i < listCorrects.size() ; i++){
+        int total = 0;
+        for(int i = 0; i < listCorrects.size() ; i++){
            if(listCorrects.get(i).contains("C")){
               total = total + 1;
            }
         }
-        AlertDialog.Builder alertDialogBuilder  = new AlertDialog.Builder(fragment.getContext());
-        alertDialogBuilder.setTitle("Explanations: ");
+        if(total > 0) {
+            this.showHitsDialog(fragment.getContext(), total);
+        } else {
+            this.showNoHitsDialog(fragment.getContext());
+        }
+
+    }
+
+    private void showHitsDialog(Context ctx, int total) {
+        AlertDialog.Builder alertDialogBuilder  = new AlertDialog.Builder(ctx);
+
+        if (total >= 8) {
+            alertDialogBuilder.setTitle("Parabéns!");
+            alertDialogBuilder
+                    .setIcon(R.mipmap.ic_icon_dialog)
+                    .setMessage("Você acertou: "+total+" de 10 questões!")
+                    .setCancelable(false)
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        } else if (total >= 1 && total < 8) {
+
+            alertDialogBuilder.setTitle("Parabéns! Continue estudando!");
+            alertDialogBuilder
+                    .setIcon(R.mipmap.ic_icon_dialog)
+                    .setMessage("Você acertou: "+total+" de 10 questões!")
+                    .setCancelable(false)
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+
+        }
+    }
+
+    private void showNoHitsDialog(Context ctx) {
+        AlertDialog.Builder alertDialogBuilder  = new AlertDialog.Builder(ctx);
+        alertDialogBuilder.setTitle("Ops!");
         alertDialogBuilder
                 .setIcon(R.mipmap.ic_icon_dialog)
-                .setMessage("Parabéns! Você acertou: "+total+" de 10 questões!")
+                .setMessage("Parece que precisamos estudar mais!\n Você não acertou nenhuma das 10 questões.")
                 .setCancelable(false)
-                .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Ok.Vamos lá!", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                     }
                 });
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
-        alertDialog.getWindow().setLayout(900, 600);
     }
-
-
-
-
-
 
 }

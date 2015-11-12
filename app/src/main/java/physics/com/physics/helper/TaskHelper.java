@@ -10,7 +10,4 @@ public interface TaskHelper {
     //used to take the data
     void processFinish(HashMap<Long, String> output);
 
-
-
-
 }

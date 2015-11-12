@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DifractionActivity"
+    android:background="@drawable/modules_background">
+
+    <RelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp">
+
+            <RelativeLayout
+                android:id="@+id/refraction_questions_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/r1W"
+                    android:layout_below="@+id/image_test_question2"
+                    android:layout_toRightOf="@id/rgroupq2"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/r2"
+                    android:layout_below="@+id/rgroupq2"/>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

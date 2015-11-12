@@ -36,8 +36,8 @@ public class RefractionHelper {
         bodyText1 = (TextView) view.findViewById(R.id.text_content);
         bodyText1.setText(R.string.teste2);
 
-        new ResourceImageTask(imageTest, BASE_URL + "/1/image/1")
-                .execute();
+//        new ResourceImageTask(imageTest, BASE_URL + "/1/image/1")
+//                .execute();
 
         new GifDataDownloader(gifTest)
                 .execute(BASE_URL + "/1/animation/1");

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ReflectionActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DifractionActivity"
     android:background="@drawable/modules_background">
 
     <RelativeLayout
         android:layout_width="1000dp"
         android:layout_height="500dp"
-        android:layout_marginTop="100dp">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lorem Ipsum"
-            android:textSize="26sp"
-            android:textStyle="bold"/>
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="25dp">
 
         <ScrollView
             android:id="@+id/scroll"
@@ -29,137 +25,155 @@
             android:layout_marginTop="10dp">
 
             <RelativeLayout
+                android:id="@+id/difraction_questions_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/title_aprendizagem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="22sp"/>
-
-                <TextView
-                    android:id="@+id/text_content"
+                <RelativeLayout
+                    android:id="@+id/layout_diffraction_question_one"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Olá Pequeno Gafanhoto"
-                    android:textSize="20sp"
-                    android:layout_below="@id/title_aprendizagem"/>
+                    android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/image_test_question1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/text_content"/>
-
-
-                <RadioGroup
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/rgroupq1"
-                    android:layout_width="200dp"
-                    android:layout_height="20dp"
-                    android:orientation="horizontal"
-                    android:layout_below="@id/image_test_question1">
-                    <RadioButton android:id="@+id/q1a"
+                    <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="A"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q1b"
+                        android:id="@+id/diffraction_progress_q1"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/image_test_question1"
+                        android:layout_width="1000dp"
+                        android:layout_height="600dp"
+                        android:layout_below="@+id/text_content"/>
+
+                    <RadioGroup
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rgroupq1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="B"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q1c"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="C"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q1d"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="D"
-                        android:onClick="onRadioButtonClicked"/>
-                </RadioGroup>
+                        android:orientation="horizontal"
+                        android:layout_below="@id/image_test_question1">
+                        <RadioButton android:id="@+id/q1a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q1b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q1c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q1d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q1e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E"
+                            android:onClick="onRadioButtonClicked"/>
+                    </RadioGroup>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/r1"
-                    android:layout_below="@+id/image_test_question1"
-                    android:layout_toRightOf="@id/rgroupq1"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/diffraction_question_correction_1"
+                        android:layout_centerInParent="true"/>
 
+                </RelativeLayout>
 
-
-                <ImageView
-                    android:layout_marginTop="15dp"
-                    android:id="@+id/image_test_question2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rgroupq1"
-                    />
-
-
-                <RadioGroup
-                    android:id="@+id/rgroupq2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:layout_below="@+id/image_test_question2">
-                    <RadioButton android:id="@+id/q2a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="A"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q2b"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="B"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q2c"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="C"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/q2d"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="D"
-                        android:onClick="onRadioButtonClicked"/>
-
-                </RadioGroup>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/r1W"
-                    android:layout_below="@+id/image_test_question2"
-                    android:layout_toRightOf="@id/rgroupq2"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/r2"
-                    android:layout_below="@+id/rgroupq2"/>
-
-                <Button
+                <RelativeLayout
+                    android:id="@+id/layout_diffraction_question_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Confirmar"
-                    android:id="@+id/confirmQuestions"
-                    android:layout_below="@+id/rgroupq2"/>
+                    android:layout_below="@+id/layout_diffraction_question_one">
 
-                <Button
-                    android:layout_marginTop="10dp"
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diffraction_progress_q2"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/image_test_question2"
+                        android:layout_width="1000dp"
+                        android:layout_height="600dp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgroupq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/image_test_question2">
+                        <RadioButton android:id="@+id/q2a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q2b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q2c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q2d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/q2e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/diffraction_question_correction_2"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_diffraction_question_buttons"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Limpar"
-                    android:id="@+id/cleanQuestions"
-                    android:layout_below="@+id/confirmQuestions"/>
+                    android:layout_below="@+id/layout_diffraction_question_two"
+                    android:layout_marginTop="30dp">
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmar"
+                        android:layout_marginBottom="50dp"
+                        android:id="@+id/diffraction_questions_btn_confirm" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limpar"
+                        android:id="@+id/diffraction_questions_btn_clean"
+                        android:layout_toRightOf="@id/diffraction_questions_btn_confirm"/>
+
+                </RelativeLayout>
 
             </RelativeLayout>
-
 
         </ScrollView>
 

@@ -36,7 +36,7 @@ public class ReflectionTestFragment extends Fragment {
 
         image = (ImageView) view.findViewById(R.id.test_question_1_image);
 
-        new ResourceImageTask(image, BASE_URL + "/2/image/2").execute();
+//        new ResourceImageTask(image, BASE_URL + "/2/image/2").execute();
 
         return view;
     }
