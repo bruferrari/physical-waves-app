@@ -1,14 +1,13 @@
 package physics.com.physics.fragments;
 
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -33,18 +32,21 @@ public class DiffractionQuestionsFragment extends Fragment {
     TaskHelper taskHelper = new TaskHelper() {
         @Override //setting image and verify
         public void processFinish(HashMap<Long, String> output) {
-           helper.settingImagesAndExplanation(output);
-           helper.openDialog(DiffractionQuestionsFragment.this, output);
+           qHelper.settingImagesAndExplanation(output);
+           qHelper.openDialog(DiffractionQuestionsFragment.this, output);
         }};
 
     private View view;
     private DiffractionHelper helper;
+    private QuestionsHelper qHelper;
     private RadioGroup radioGroupQ1;
     private RadioGroup radioGroupQ2;
-    private Button confirm;
-    private Button clean;
+    private Button confirmBtn;
+    private Button cleanBtn;
     private HashMap<Long,String> map = new HashMap<Long, String>();
     private List<RadioGroup> radioGroupList = new ArrayList<>();
+    private List<ImageView> viewImages = new ArrayList<>();
+    private static final int CONTENT_ID = 3;
 
     public DiffractionQuestionsFragment() {
         //Dummy - required by fragment
@@ -61,7 +63,14 @@ public class DiffractionQuestionsFragment extends Fragment {
         view = inflater.inflate(R.layout.diffraction_questions_layout, container, false);
 
         helper = new DiffractionHelper(view);
+
         helper.initializeUIElements();
+
+        // setting imageViews initialized on DiffractionHelper in this List viewImages
+        helper.setCorrectionsImagesOnList(viewImages);
+
+        // instance of qHelper passing list of corrections images as parameter
+        qHelper = new QuestionsHelper(viewImages);
 
         radioGroupQ1 = (RadioGroup)view.findViewById(R.id.rgroupq1);
         radioGroupQ2 = (RadioGroup)view.findViewById(R.id.rgroupq2);
@@ -69,10 +78,11 @@ public class DiffractionQuestionsFragment extends Fragment {
         radioGroupList.add(radioGroupQ1);
         radioGroupList.add(radioGroupQ2);
 
-        confirm = (Button)view.findViewById(R.id.diffraction_questions_btn_confirm);
-        clean = (Button)view.findViewById(R.id.diffraction_questions_btn_clean);
+        confirmBtn = (Button)view.findViewById(R.id.diffraction_questions_btn_confirm);
+        cleanBtn = (Button)view.findViewById(R.id.diffraction_questions_btn_clean);
 
         this.settingListeners();
+        this.settingBtnsListeners();
 
         return view;
     }
@@ -110,14 +120,16 @@ public class DiffractionQuestionsFragment extends Fragment {
                     }
                 }
             }});
+    }
 
-        confirm.setOnClickListener(new View.OnClickListener() {
+    private void settingBtnsListeners() {
+        confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (map.size() < 2) {
                     Toast.makeText(getContext(), "Há questões sem resposta!", Toast.LENGTH_LONG).show();
                 } else {
-                    new AnswerTask(map, taskHelper).execute();
+                    new AnswerTask(map, taskHelper, CONTENT_ID).execute();
 
                     //locking up all radio buttons
                     for (int i = 0; i < radioGroupQ1.getChildCount(); i++) {
@@ -128,7 +140,7 @@ public class DiffractionQuestionsFragment extends Fragment {
             }
         });
 
-        clean.setOnClickListener(new View.OnClickListener() {
+        cleanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 for (RadioGroup g : radioGroupList) {

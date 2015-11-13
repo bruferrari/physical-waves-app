@@ -1,15 +1,7 @@
 package physics.com.physics.task;
 
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
@@ -18,8 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import physics.com.physics.R;
-import physics.com.physics.helper.DiffractionHelper;
+import physics.com.physics.helper.QuestionsHelper;
 import physics.com.physics.helper.TaskHelper;
 import physics.com.physics.model.Answer;
 import physics.com.physics.model.AnswerResponse;
@@ -32,14 +23,15 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
     private TaskHelper taskHelper = null;
     private List<Answer> answers;
     private HashMap<Long,String> userAnswers;
-    private DiffractionHelper diffractionHelper = new DiffractionHelper();
-    private HashMap<Long,String> mapServidor = new HashMap<Long,String>();
+    private QuestionsHelper qHelper = new QuestionsHelper();
+    private HashMap<Long,String> mapServer = new HashMap<Long,String>();
     private HashMap<Long,String> finalAnswers = new HashMap<Long,String>();
+    private int contentId;
 
-
-    public AnswerTask(HashMap<Long,String> userAnswers , TaskHelper taskHelper) {
+    public AnswerTask(HashMap<Long,String> userAnswers, TaskHelper taskHelper, int contentId) {
         this.userAnswers = userAnswers;
         this.taskHelper = taskHelper;
+        this.contentId = contentId;
     }
 
     @Override
@@ -50,7 +42,7 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
     @Override
     protected List<Answer> doInBackground(Void... params) {
         try {
-            final String uri = "http://ec2-52-23-232-114.compute-1.amazonaws.com:8080/physics-api/answers/1";
+            final String uri = "http://ec2-52-23-232-114.compute-1.amazonaws.com:8080/physics-api/answers/" + contentId;
             RestTemplate restTemplate = new RestTemplate();
             restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
             answers = restTemplate.getForObject(uri, AnswerResponse.class).getAnswers();
@@ -69,9 +61,9 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
             answerAtribuite.add(answer.getAnswer());
         }
         Long j = 1L;
-        for(String i : answerAtribuite) mapServidor.put(j++ , i);
-        Log.d(mapServidor.toString(),"HashMap");
-        finalAnswers = diffractionHelper.compareAnswers(mapServidor, userAnswers);
+        for(String i : answerAtribuite) mapServer.put(j++ , i);
+        Log.d(mapServer.toString(),"HashMap");
+        finalAnswers = qHelper.compareAnswers(mapServer, userAnswers);
         taskHelper.processFinish(finalAnswers);
 
     }
