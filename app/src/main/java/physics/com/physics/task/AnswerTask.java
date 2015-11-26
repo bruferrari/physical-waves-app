@@ -1,7 +1,11 @@
 package physics.com.physics.task;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
@@ -11,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.TreeMap;
 
+import physics.com.physics.R;
 import physics.com.physics.helper.QuestionsHelper;
 import physics.com.physics.helper.TaskHelper;
 import physics.com.physics.model.Answer;
@@ -28,16 +33,22 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
     private TreeMap<Long,String> mapServer = new TreeMap<>();
     private TreeMap<Long,String> finalAnswers = new TreeMap<>();
     private int contentId;
+    private ProgressDialog progressDialog;
+    private Context context;
 
-    public AnswerTask(TreeMap<Long,String> userAnswers, TaskHelper taskHelper, int contentId) {
+    public AnswerTask(Context context, TreeMap<Long,String> userAnswers, TaskHelper taskHelper, int contentId) {
         this.userAnswers = userAnswers;
         this.taskHelper = taskHelper;
         this.contentId = contentId;
+        this.context = context;
     }
 
     @Override
     protected void onPreExecute() {
-
+        this.progressDialog = new ProgressDialog(context);
+        progressDialog.setTitle(context.getResources().getString(R.string.progress_dialog_title));
+        progressDialog.setMessage(context.getResources().getString(R.string.progress_dialog_msg));
+        progressDialog.show();
     }
 
     @Override
@@ -71,6 +82,8 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
         Log.d(mapServer.toString(),"HashMap");
         finalAnswers = qHelper.compareAnswers(mapServer, userAnswers);
         taskHelper.processFinish(finalAnswers);
+
+        progressDialog.dismiss();
 
     }
 

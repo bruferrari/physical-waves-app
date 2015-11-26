@@ -264,7 +264,7 @@ public class DiffractionQuestionsFragment extends Fragment {
                 if (map.size() < 10) {
                     Toast.makeText(getContext(), "Há questões sem resposta!", Toast.LENGTH_LONG).show();
                 } else {
-                    new AnswerTask(map, taskHelper, CONTENT_ID).execute();
+                    new AnswerTask(getContext(), map, taskHelper, CONTENT_ID).execute();
 
                     //locking up all radio buttons
                     for (int i = 0; i < radioGroupQ1.getChildCount(); i++) {

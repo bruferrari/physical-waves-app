@@ -51,7 +51,7 @@ public class ResourceHelper {
             view.setImageBitmap(bt);
         } catch (Exception ex) {
             throw new ResourceException(
-                    "An connection or uri problem has occurred, please check if server is up and running", ex);
+                    "An image set problems or connection / uri problem has occurred, please check if server is up and running", ex);
         }
 
     }

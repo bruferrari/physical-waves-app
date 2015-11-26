@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Physics</string>
+    <string name="progress_dialog_title">Carregando...</string>
+    <string name="progress_dialog_msg">Aguarde enquanto recuperamos os dados do servidor</string>
     <string name="DEVELOPER_KEY">AIzaSyCxiUa4wRlUwaJ_x20EsLvUrPq0HFz0ego</string>
     <string name="tab_material">TEXTO</string>
     <string name="tab_videos">VÍDEOS</string>

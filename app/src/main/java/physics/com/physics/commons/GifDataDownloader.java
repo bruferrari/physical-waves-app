@@ -13,23 +13,26 @@ public class GifDataDownloader extends AsyncTask<String, Void, byte[]> {
 
     private static final String TAG = "GifDataDownloader";
     private GifImageView gif;
+    private String gifURL;
 
-    public GifDataDownloader(GifImageView view) {
+    public GifDataDownloader(GifImageView view, String gifURL) {
         this.gif = view;
+        this.gifURL = gifURL;
     }
 
     @Override
     protected byte[] doInBackground(final String... params) {
-        final String gifUrl = params[0];
+//        final String gifUrl = params[0];
+//        gifURL = params[0];
 
-        if (gifUrl == null)
+        if (gifURL == null)
             return null;
 
         byte[] gif = null;
         try {
-            gif = ByteArrayHttpClient.get(gifUrl);
+            gif = ByteArrayHttpClient.get(gifURL);
         } catch (OutOfMemoryError e) {
-            Log.e(TAG, "GifDecode OOM: " + gifUrl, e);
+            Log.e(TAG, "GifDecode OOM: " + gifURL, e);
         }
 
         return gif;

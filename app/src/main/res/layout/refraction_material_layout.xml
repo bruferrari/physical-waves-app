@@ -69,19 +69,79 @@
 
 
 
-                <ImageView
-                    android:id="@+id/image_test2"
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_test2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/text_content" />-->
+
+                <!--<ProgressBar-->
+                    <!--android:id="@+id/refraction_material_pb2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"/>-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_test3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/image_test2" />-->
+
+                <!--<ProgressBar-->
+                    <!--android:id="@+id/refraction_material_pb3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_test4"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/image_test3" />-->
+
+                <!--<ProgressBar-->
+                    <!--android:id="@+id/refraction_material_pb4"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_test5"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/image_test4" />-->
+
+                <!--<com.felipecsl.gifimageview.library.GifImageView-->
+                    <!--android:id="@+id/gifImageView"-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:layout_toRightOf="@+id/image_test"-->
+                    <!--android:layout_below="@+id/text_content"/>-->
+
+                <WebView
+                    android:id="@+id/web_view_test"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/text_content"
-                    android:layout_toRightOf="@+id/image_test"/>
+                    />
 
-                <com.felipecsl.gifimageview.library.GifImageView
-                    android:id="@+id/gifImageView"
-                    android:layout_width="300dp"
-                    android:layout_height="300dp"
-                    android:layout_toRightOf="@+id/image_test"
-                    android:layout_below="@+id/text_content"/>
+                <WebView
+                    android:id="@+id/web_view_test2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/web_view_test"/>
+
+                <WebView
+                    android:id="@+id/web_view_test3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/web_view_test2"/>
+
+                <WebView
+                    android:id="@+id/web_view_test4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/web_view_test3"/>
 
             </RelativeLayout>
 
