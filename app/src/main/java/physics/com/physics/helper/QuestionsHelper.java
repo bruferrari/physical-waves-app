@@ -6,11 +6,13 @@ import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.TreeMap;
 
 import physics.com.physics.R;
 
@@ -27,6 +29,9 @@ import physics.com.physics.R;
 public class QuestionsHelper {
 
     private List<ImageView> viewImages;
+    private List<TextView> txtViewList;
+//    private static List<String> correct = new ArrayList<>();
+    private static HashMap<Integer, String> correct = new HashMap<>();
 
     public QuestionsHelper() {
 
@@ -36,12 +41,17 @@ public class QuestionsHelper {
         this.viewImages = viewImages;
     }
 
+    public QuestionsHelper(List<ImageView> viewImages, List<TextView> txtViewList) {
+        this.viewImages = viewImages;
+        this.txtViewList = txtViewList;
+    }
+
     public List<ImageView> getViewImages() {
         return viewImages;
     }
 
-    public HashMap<Long, String> compareAnswers(HashMap<Long, String> mapServer, HashMap<Long, String> userAnswers){
-        HashMap<Long, String> finalAnswers = new HashMap<Long, String>();
+    public TreeMap<Long, String> compareAnswers(TreeMap<Long, String> mapServer, TreeMap<Long, String> userAnswers){
+        TreeMap<Long, String> finalAnswers = new TreeMap<>();
         for (HashMap.Entry pair : mapServer.entrySet()) {
             Long key = (Long)pair.getKey();
             if(userAnswers.containsKey(key)){
@@ -52,18 +62,21 @@ public class QuestionsHelper {
                 }else{
                     finalAnswers.put(Long.parseLong(pair.getKey().toString()), "E");
                     Log.d("Questão: ", pair.getKey().toString());
-                    Log.d("Incorreta! ", "Correta seria: " + pair.getValue().toString());
+//                    Log.d("Incorreta! ", "Correta seria: " + pair.getValue().toString());
+//                    correct.add(pair.getValue().toString());
+                    correct.put(key.intValue(), pair.getValue().toString());
                 }
             }
         }
+        Log.d("CORRETAS ==> ", correct.toString());
         return finalAnswers;
     }
 
-    public void settingImagesAndExplanation(HashMap<Long, String> output) {
+    public void settingImagesAndExplanation(TreeMap<Long, String> output) {
         Long i = 1L; //incica questão 1
         ListIterator it = viewImages.listIterator(); //interador na lista de imageview de cadas questão (correct, wrong)
         while(it.hasNext()){
-            for (HashMap.Entry pair : output.entrySet()) { //pair para chave e valor que recebemos, verificamos respostas corretas e erradas
+            for (TreeMap.Entry pair : output.entrySet()) { //pair para chave e valor que recebemos, verificamos respostas corretas e erradas
                 if(pair.getKey().equals(i) && pair.getValue().equals("C")){ //se chave igual a questão "i" e valor igual a "C" (Correta)
                     Object v = it.next(); //Pega primeiro objeto do interador
                     if(v instanceof ImageView){ //verifica se é uma imageview
@@ -81,7 +94,25 @@ public class QuestionsHelper {
         }
     }
 
-    public void openDialog(Fragment fragment, HashMap<Long, String> explanation){
+    public void settingWrongAnswersCorrection(TreeMap<Long, String> map) {
+        Long i = 1L;
+        ListIterator it = txtViewList.listIterator();
+        int len = txtViewList.size();
+        while(0 < len-- && it.hasNext()) {
+            for(HashMap.Entry pair : map.entrySet()) {
+                if(pair.getKey().equals(i) && pair.getValue().equals("E")) {
+                    int index = i.intValue() - 1;
+                    Object o = txtViewList.get(index);
+                    if(o instanceof TextView) {
+                        ((TextView) o).setText(correct.get(i.intValue()));
+                    }
+                    it.nextIndex();
+                } i++;
+            }
+        }
+    }
+
+    public void openDialog(Fragment fragment, TreeMap<Long, String> explanation){
         List<String> listCorrects = new ArrayList<>(explanation.values());
         int total = 0;
         for(int i = 0; i < listCorrects.size() ; i++){

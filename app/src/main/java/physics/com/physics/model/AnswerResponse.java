@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class AnswerResponse implements Serializable {
 
-    public List<Answer> ans;
+    private List<Answer> ans;
 
     public List<Answer> getAnswers() {
         return ans;

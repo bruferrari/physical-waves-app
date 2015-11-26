@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import physics.com.physics.helper.QuestionsHelper;
 import physics.com.physics.helper.TaskHelper;
@@ -22,13 +23,13 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
 
     private TaskHelper taskHelper = null;
     private List<Answer> answers;
-    private HashMap<Long,String> userAnswers;
+    private TreeMap<Long,String> userAnswers;
     private QuestionsHelper qHelper = new QuestionsHelper();
-    private HashMap<Long,String> mapServer = new HashMap<Long,String>();
-    private HashMap<Long,String> finalAnswers = new HashMap<Long,String>();
+    private TreeMap<Long,String> mapServer = new TreeMap<>();
+    private TreeMap<Long,String> finalAnswers = new TreeMap<>();
     private int contentId;
 
-    public AnswerTask(HashMap<Long,String> userAnswers, TaskHelper taskHelper, int contentId) {
+    public AnswerTask(TreeMap<Long,String> userAnswers, TaskHelper taskHelper, int contentId) {
         this.userAnswers = userAnswers;
         this.taskHelper = taskHelper;
         this.contentId = contentId;
@@ -61,7 +62,12 @@ public class AnswerTask extends AsyncTask<Void, Void, List<Answer>> {
             answerAtribuite.add(answer.getAnswer());
         }
         Long j = 1L;
-        for(String i : answerAtribuite) mapServer.put(j++ , i);
+//        for(String s : answerAtribuite) {
+//            mapServer.put(j++ , s);
+//        }
+        for(int i = 0; i < answerAtribuite.size(); i++) {
+            mapServer.put((long) i+1, answerAtribuite.get(i));
+        }
         Log.d(mapServer.toString(),"HashMap");
         finalAnswers = qHelper.compareAnswers(mapServer, userAnswers);
         taskHelper.processFinish(finalAnswers);

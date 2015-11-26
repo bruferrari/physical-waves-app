@@ -47,11 +47,27 @@
                     android:textSize="20sp"
                     android:layout_below="@id/title_aprendizagem"/>
 
-                <ImageView
-                    android:id="@+id/image_test"
-                    android:layout_width="200dp"
-                    android:layout_height="300dp"
-                    android:layout_below="@+id/text_content"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_content">
+
+                    <ProgressBar
+                        android:id="@+id/refraction_material_pb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_test"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp" />
+
+
+                </RelativeLayout>
+
+
+
 
                 <ImageView
                     android:id="@+id/image_test2"
