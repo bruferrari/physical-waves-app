@@ -44,6 +44,10 @@ public class RefractionActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
     }
 
+    public void onRadioButtonClicked(View v){
+
+    }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new RefractionMaterialFragment(), getResources().getString(R.string.tab_material));

@@ -51,7 +51,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq1"
+                        android:id="@+id/refraction_radio_group1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -123,7 +123,7 @@
                         android:layout_height="600dp" />
 
                     <RadioGroup
-                        android:id="@+id/rgroupq2"
+                        android:id="@+id/refraction_radio_group2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -197,7 +197,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq3"
+                        android:id="@+id/refraction_radio_group3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -270,7 +270,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq4"
+                        android:id="@+id/refraction_radio_group4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -343,7 +343,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq5"
+                        android:id="@+id/refraction_radio_group5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -416,7 +416,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq6"
+                        android:id="@+id/refraction_radio_group6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -489,7 +489,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq7"
+                        android:id="@+id/refraction_radio_group7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -562,7 +562,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq8"
+                        android:id="@+id/refraction_radio_group8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -635,7 +635,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq9"
+                        android:id="@+id/refraction_radio_group9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -708,7 +708,7 @@
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/rgroupq10"
+                        android:id="@+id/refraction_radio_group10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"

@@ -41,7 +41,7 @@ public class RefractionMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.refraction_material_layout, container, false);
 
         helper = new RefractionHelper(view);
-        helper.initializeElements();
+//        helper.initializeElements();
 
         return view;
     }
