@@ -7,8 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.youtube.player.internal.v;
+
 import physics.com.physics.R;
 import physics.com.physics.helper.InterferenceHelper;
+import physics.com.physics.helper.InterferenceMaterialHelper;
 
 /**
  * Created by bruno on 04/11/15.
@@ -17,6 +20,7 @@ public class InterferenceMaterialFragment extends Fragment {
 
     private View view;
     private InterferenceHelper helper;
+    private InterferenceMaterialHelper materialHelper;
 
     public InterferenceMaterialFragment() {
         //Empty constructor
@@ -33,7 +37,9 @@ public class InterferenceMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.interference_material_layout, container, false);
 
         helper = new InterferenceHelper(view);
-        helper.initializeUIElements();
+        materialHelper = new InterferenceMaterialHelper(view);
+        materialHelper.initializeUIElements();
+        //helper.initializeUIElements();
 
         return view;
     }

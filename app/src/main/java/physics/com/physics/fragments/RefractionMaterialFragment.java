@@ -13,6 +13,7 @@ import com.felipecsl.gifimageview.library.GifImageView;
 
 import physics.com.physics.R;
 import physics.com.physics.helper.RefractionHelper;
+import physics.com.physics.helper.RefractionMaterialHelper;
 
 /**
  * Created by bruno on 30/10/15.
@@ -21,6 +22,7 @@ public class RefractionMaterialFragment extends Fragment {
 
     private View view;
     private RefractionHelper helper;
+    private RefractionMaterialHelper materialHelper;
     private TextView bodyText1;
     private ImageView imageTest;
     private GifImageView gifTest;
@@ -41,7 +43,9 @@ public class RefractionMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.refraction_material_layout, container, false);
 
         helper = new RefractionHelper(view);
-//        helper.initializeElements();
+        materialHelper = new RefractionMaterialHelper(view);
+        materialHelper.initializeElements();
+        //helper.initializeElements();
 
         return view;
     }

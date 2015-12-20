@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".RefractionActivity"
+    tools:context=".reflectionActivity"
     android:background="@drawable/modules_background">
 
     <RelativeLayout
@@ -18,44 +18,44 @@
         android:layout_marginLeft="25dp">
 
         <ScrollView
-            android:id="@+id/scroll_questions_refraction"
+            android:id="@+id/scroll_questions_reflection"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/title"
             android:layout_marginTop="10dp">
 
             <RelativeLayout
-                android:id="@+id/refraction_questions_layout"
+                android:id="@+id/reflection_questions_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <!-- Question no 1 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_one"
+                    android:id="@+id/layout_reflection_question_one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q1"
+                        android:id="@+id/reflection_progress_q1"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question1"
+                        android:id="@+id/image_reflection_question1"
                         android:layout_width="1000dp"
                         android:layout_height="300dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group1"
+                        android:id="@+id/reflection_radio_group1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question1">
+                        android:layout_below="@id/image_reflection_question1">
                         <RadioButton android:id="@+id/q1a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -86,48 +86,48 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_1"
+                        android:id="@+id/reflection_question_correction_1"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_1"
+                        android:id="@+id/reflection_question_correct_answer_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_1"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_1"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 2 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_two"
+                    android:id="@+id/layout_reflection_question_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_one">
+                    android:layout_below="@+id/layout_reflection_question_one">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q2"
+                        android:id="@+id/reflection_progress_q2"
                         android:visibility="gone"
                         android:layout_centerInParent="true" />
 
                     <ImageView
                         android:layout_marginTop="15dp"
-                        android:id="@+id/image_refraction_question2"
+                        android:id="@+id/image_reflection_question2"
                         android:layout_width="1000dp"
                         android:layout_height="600dp" />
 
                     <RadioGroup
-                        android:id="@+id/refraction_radio_group2"
+                        android:id="@+id/reflection_radio_group2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@+id/image_refraction_question2">
+                        android:layout_below="@+id/image_reflection_question2">
                         <RadioButton android:id="@+id/q2a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -159,49 +159,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_2"
+                        android:id="@+id/reflection_question_correction_2"
                         android:layout_centerInParent="true" />
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_2"
+                        android:id="@+id/reflection_question_correct_answer_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_2"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_2"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 3 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_three"
+                    android:id="@+id/layout_reflection_question_three"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_two">
+                    android:layout_below="@+id/layout_reflection_question_two">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q3"
+                        android:id="@+id/reflection_progress_q3"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question3"
+                        android:id="@+id/image_reflection_question3"
                         android:layout_width="1000dp"
                         android:layout_height="800dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group3"
+                        android:id="@+id/reflection_radio_group3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question3">
+                        android:layout_below="@id/image_reflection_question3">
                         <RadioButton android:id="@+id/q3a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -232,49 +232,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_3"
+                        android:id="@+id/reflection_question_correction_3"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_3"
+                        android:id="@+id/reflection_question_correct_answer_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_3"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_3"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 4 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_four"
+                    android:id="@+id/layout_reflection_question_four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_three">
+                    android:layout_below="@+id/layout_reflection_question_three">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q4"
+                        android:id="@+id/reflection_progress_q4"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question4"
+                        android:id="@+id/image_reflection_question4"
                         android:layout_width="1000dp"
                         android:layout_height="800dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group4"
+                        android:id="@+id/reflection_radio_group4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question4">
+                        android:layout_below="@id/image_reflection_question4">
                         <RadioButton android:id="@+id/q4a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -305,49 +305,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_4"
+                        android:id="@+id/reflection_question_correction_4"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_4"
+                        android:id="@+id/reflection_question_correct_answer_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_4"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_4"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 5 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_five"
+                    android:id="@+id/layout_reflection_question_five"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_four">
+                    android:layout_below="@+id/layout_reflection_question_four">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q5"
+                        android:id="@+id/reflection_progress_q5"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question5"
+                        android:id="@+id/image_reflection_question5"
                         android:layout_width="1000dp"
                         android:layout_height="800dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group5"
+                        android:id="@+id/reflection_radio_group5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question5">
+                        android:layout_below="@id/image_reflection_question5">
                         <RadioButton android:id="@+id/q5a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -378,49 +378,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_5"
+                        android:id="@+id/reflection_question_correction_5"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_5"
+                        android:id="@+id/reflection_question_correct_answer_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_5"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_5"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 6 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_six"
+                    android:id="@+id/layout_reflection_question_six"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_five">
+                    android:layout_below="@+id/layout_reflection_question_five">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q6"
+                        android:id="@+id/reflection_progress_q6"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question6"
+                        android:id="@+id/image_reflection_question6"
                         android:layout_width="1000dp"
                         android:layout_height="750dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group6"
+                        android:id="@+id/reflection_radio_group6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question6">
+                        android:layout_below="@id/image_reflection_question6">
                         <RadioButton android:id="@+id/q6a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -451,49 +451,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_6"
+                        android:id="@+id/reflection_question_correction_6"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_6"
+                        android:id="@+id/reflection_question_correct_answer_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_6"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_6"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 7 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_seven"
+                    android:id="@+id/layout_reflection_question_seven"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_six">
+                    android:layout_below="@+id/layout_reflection_question_six">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q7"
+                        android:id="@+id/reflection_progress_q7"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question7"
+                        android:id="@+id/image_reflection_question7"
                         android:layout_width="1000dp"
                         android:layout_height="800dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group7"
+                        android:id="@+id/reflection_radio_group7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question7">
+                        android:layout_below="@id/image_reflection_question7">
                         <RadioButton android:id="@+id/q7a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -524,49 +524,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_7"
+                        android:id="@+id/reflection_question_correction_7"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_7"
+                        android:id="@+id/reflection_question_correct_answer_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_7"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_7"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 8 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_eight"
+                    android:id="@+id/layout_reflection_question_eight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_seven">
+                    android:layout_below="@+id/layout_reflection_question_seven">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q8"
+                        android:id="@+id/reflection_progress_q8"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question8"
+                        android:id="@+id/image_reflection_question8"
                         android:layout_width="1000dp"
                         android:layout_height="900dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group8"
+                        android:id="@+id/reflection_radio_group8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question8">
+                        android:layout_below="@id/image_reflection_question8">
                         <RadioButton android:id="@+id/q8a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -597,49 +597,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_8"
+                        android:id="@+id/reflection_question_correction_8"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_8"
+                        android:id="@+id/reflection_question_correct_answer_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_8"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_8"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 9 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_nine"
+                    android:id="@+id/layout_reflection_question_nine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_eight">
+                    android:layout_below="@+id/layout_reflection_question_eight">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q9"
+                        android:id="@+id/reflection_progress_q9"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question9"
+                        android:id="@+id/image_reflection_question9"
                         android:layout_width="1000dp"
                         android:layout_height="900dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group9"
+                        android:id="@+id/reflection_radio_group9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question9">
+                        android:layout_below="@id/image_reflection_question9">
                         <RadioButton android:id="@+id/q9a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -670,49 +670,49 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_9"
+                        android:id="@+id/reflection_question_correction_9"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_9"
+                        android:id="@+id/reflection_question_correct_answer_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_9"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_9"/>
 
                 </RelativeLayout>
 
                 <!-- Question no 10 -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_ten"
+                    android:id="@+id/layout_reflection_question_ten"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_nine">
+                    android:layout_below="@+id/layout_reflection_question_nine">
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/refraction_progress_q10"
+                        android:id="@+id/reflection_progress_q10"
                         android:layout_centerInParent="true"
                         android:visibility="gone"/>
 
                     <ImageView
-                        android:id="@+id/image_refraction_question10"
+                        android:id="@+id/image_reflection_question10"
                         android:layout_width="1000dp"
-                        android:layout_height="300dp"
+                        android:layout_height="600dp"
                         android:layout_below="@+id/text_content"/>
 
                     <RadioGroup
                         android:layout_marginTop="10dp"
-                        android:id="@+id/refraction_radio_group10"
+                        android:id="@+id/reflection_radio_group10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_below="@id/image_refraction_question10">
+                        android:layout_below="@id/image_reflection_question10">
                         <RadioButton android:id="@+id/q10a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -743,28 +743,28 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:id="@+id/refraction_question_correction_10"
+                        android:id="@+id/reflection_question_correction_10"
                         android:layout_centerInParent="true"/>
 
                     <TextView
-                        android:id="@+id/refraction_question_correct_answer_10"
+                        android:id="@+id/reflection_question_correct_answer_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="100sp"
                         android:textStyle="bold"
                         android:layout_centerInParent="true"
-                        android:layout_toRightOf="@+id/refraction_question_correction_10"/>
+                        android:layout_toRightOf="@+id/reflection_question_correction_10"/>
 
                 </RelativeLayout>
 
                 <!-- Buttons -->
 
                 <RelativeLayout
-                    android:id="@+id/layout_refraction_question_buttons"
+                    android:id="@+id/layout_reflection_question_buttons"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_refraction_question_ten"
+                    android:layout_below="@+id/layout_reflection_question_ten"
                     android:layout_marginTop="30dp">
 
                     <Button
@@ -772,14 +772,14 @@
                         android:layout_height="wrap_content"
                         android:text="Confirmar"
                         android:layout_marginBottom="50dp"
-                        android:id="@+id/refraction_questions_btn_confirm" />
+                        android:id="@+id/reflection_questions_btn_confirm" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Limpar"
-                        android:id="@+id/refraction_questions_btn_clean"
-                        android:layout_toRightOf="@id/refraction_questions_btn_confirm"/>
+                        android:id="@+id/reflection_questions_btn_clean"
+                        android:layout_toRightOf="@id/reflection_questions_btn_confirm"/>
 
                 </RelativeLayout>
 

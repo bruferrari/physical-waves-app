@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import physics.com.physics.R;
 import physics.com.physics.helper.DiffractionHelper;
+import physics.com.physics.helper.DiffractionMaterialHelper;
 
 /**
  * Created by bruno on 03/11/15.
@@ -17,6 +18,7 @@ public class DiffractionMaterialFragment extends Fragment {
 
     private View view;
     private DiffractionHelper helper;
+    private DiffractionMaterialHelper materialHelper;
 
     public DiffractionMaterialFragment() {
 
@@ -33,6 +35,8 @@ public class DiffractionMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.diffraction_material_layout, container, false);
 
         helper = new DiffractionHelper(view);
+        materialHelper = new DiffractionMaterialHelper(view);
+        materialHelper.initializeUIElements();
        // helper.initializeUIElements();
 
         return view;

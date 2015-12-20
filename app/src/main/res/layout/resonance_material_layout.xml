@@ -15,37 +15,284 @@
         android:layout_marginLeft="25dp">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/content_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lorem Ipsum"
+            android:text="@string/mdl_Ressonacia"
             android:textSize="26sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
 
         <ScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/title"
+            android:layout_below="@+id/content_title"
             android:layout_marginTop="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <!-- Primeiro Assunto -->
+
                 <TextView
-                    android:id="@+id/title_aprendizagem"
+                    android:id="@+id/chapter_title_01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/ttl_Ressonacia_1"
                     android:textSize="22sp"/>
 
                 <TextView
-                    android:id="@+id/text_content"
+                    android:id="@+id/text_content_01_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="MATERIAL DE RESONÂNCIA AQUI!!"
+                    android:text="@string/txt_Ressonacia_1_1"
                     android:textSize="20sp"
-                    android:layout_below="@id/title_aprendizagem"/>
+                    android:layout_below="@id/chapter_title_01"/>
+
+                <TextView
+                    android:id="@+id/text_content_01_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_1_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_01_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_1_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_01_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_1_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01_3"/>
+
+                <!-- Segundo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01_4"/>
+
+                <TextView
+                    android:id="@+id/text_content_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_2_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_02"/>
+
+                <!-- Terceiro Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_02"/>
+
+                <TextView
+                    android:id="@+id/text_content_03_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_3_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_03"/>
+
+                <TextView
+                    android:id="@+id/text_content_03_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_3_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_03_1"/>
+
+                <!-- Quarto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_03_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_4_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_04"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_4_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_04_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_4_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_04_2"/>
+
+                <!-- Quinto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_5"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_04_3"/>
+
+                <TextView
+                    android:id="@+id/text_content_05_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_5_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_05"/>
+
+                <TextView
+                    android:id="@+id/text_content_05_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_5_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_05_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_05_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_5_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_05_2"/>
+
+                <!-- Sexto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_6"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_05_3"/>
+
+                <TextView
+                    android:id="@+id/text_content_06_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_6_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_06"/>
+
+                <TextView
+                    android:id="@+id/text_content_06_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_6_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_06_1"/>
+
+
+                <!-- Setimo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_7"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_06_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_07_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_7_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_07"/>
+
+                <!-- Oitavo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_07_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_8_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_08"/>
+
+                <!-- Nono Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Ressonacia_9"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_08"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_9_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_9"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_9_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_09_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_9_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_09_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Ressonacia_9_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_09_3"/>
+
             </RelativeLayout>
 
 

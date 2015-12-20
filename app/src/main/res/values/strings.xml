@@ -47,5 +47,995 @@ Suspendisse sit amet arcu orci. Nulla tincidunt metus dapibus lacinia euismod. S
         o	Lei de Snell-Descartes.\n
 </string>
 
+    <string name="mdl_Reflexao">\nReflexão\n</string>
+    <string name="mdl_Refracao">\nRefração\n</string>
+    <string name="mdl_Difracao">\nDifração\n</string>
+    <string name="mdl_Interferencia">\nInterferencia\n</string>
+    <string name="mdl_Ressonacia">\nRessonancia\n</string>
+
+    <!-- Reflexao -->
+
+    <string name="ttl_Reflexao_1">\nRADAR METEOROLÓGICO\n</string>
+    <string name="txt_Reflexao_1">
+        \t \"Será que hoje vai chover?\". Uma pergunta tão simples que hoje em dia pode ser respondida com uma rápida pesquisa na web já foi e ainda é um tema amplamente estudado. Mas afinal, como os meteorologistas conseguem prever se vai ou não chover?
+        Uma das respostas para essas pergunta está ligada diretamente ao advento do RADAR. De acordo com o site http://www.cptec.inpe.br:
+    \n\n
+        \t<b>RADAR</b>: Abreviatura de Radio Detection And Ranging - alcance da detecção de sinal de rádio. É o instrumento eletrônico usado para detectar objetos a distância através da maneira como esses objetos propagam ou refletem as ondas de rádio. O radar é capaz de detectar fenômenos como a ocorrência de precipitação e a presença de nuvens por meio da reflexão dos sinais eletromagnéticos.
+    \n\n
+        \tMas afinal, como um radar consegue descobrir se uma nuvem pode gerar chuva em uma determinada região?
+</string>
+
+    <string name="ttl_Reflexao_2">\nREFLEXÃO\n</string>
+    <string name="txt_Reflexao_2">
+        \t<b>REFLEXÃO</b>: [Do Lat. reflexione, \'Ação de voltar atrás, de virar\'; reciprocidade.] S.f 1. Ato ou efeito de refletir(-se). […] 6. Fís. Modificação de direção de propagação de uma onda que incide sobre uma interface que separa dois meios diferentes, e retorna para o meio inicial. (FERREIRA, 1986)
+    \n\n
+	    \tComo vimos na definição anterior, para que um fenômeno seja definido como reflexão, além de mudar de direção, seu <b>Período (T)<sup>1</sup> , comprimento de onda (?)<sup>2</sup>  e velocidade de propagação (v)<sup>3</sup></b>  devem permanecer constante, ou seja, com valores iguais aos encontrados antes da onda refletir em uma superfície.
+       animacao 1 e 2
+    </string>
+
+    <string name="ttl_Reflexao_3">\nLEIS DA REFLEXÃO\n</string>
+    <string name="txt_Reflexao_3">
+        \tPara compreendermos a reflexão, é necessário conhecer as leis que regem esse fenômeno. No estudo da reflexão, contamos com 2 (duas) leis:
+    \n\n
+        \t1ª <b>LEI</b>: A onda incidente, a onda refletida e a <b><s>RETA NORMAL</s></b>  à superfície estão sobre um mesmo plano, ou seja, são <b>coplanares</b>.
+    \n\n
+        \t2ª <b>LEI</b>: Independente do comprimento de onda (?), velocidade de propagação, frequência ou material do qual à superfície é feita, o ângulo de incidência (?_1) é igual ao angulo de reflexão (?_2).
+    \n
+        \tAssim:
+    \n
+        \t<b>FÓRMULA 01</b>:	?_1=?_2
+    \n\n
+        \t<b>OBSERVAÇÃO</b> ( ): Na reflexão, dependendo do tipo de onda e do meio onde ela se propaga, pode ocorrer uma reflexão com inversão de<b><s> FASE </s></b>.
+    </string>
+
+    <string name="ttl_Reflexao_4">\nREFLEXÃO DE ONDAS NA SUPERFÍCIE DE UM LÍQUIDO\n</string>
+    <string name="txt_Reflexao_4_1">
+        \tQuando jogamos uma pedra na superfície de um lago, geramos uma perturbação que se propaga, em forma de circulo, até a encosta do lago. Ao chegar a beira do lago, esse pulso sofre uma reflexão.
+	\n
+        \tNa animação a seguir, podemos observar esse fenômeno.
+    </string>
+    <string name="txt_Reflexao_4_2">
+	    \tÉ interessante perceber a simetria na reflexão que ocorre com ondas circulares em uma superfície plana. A animação anterior mostra a sequência para elaborar a construção geométrica desse tipo de reflexão.
+    </string>
+
+    <string name="ttl_Reflexao_5">\nREFLEXÃO DE ONDAS EM UMA CORDA\n</string>
+    <string name="txt_Reflexao_5_1">
+        \tAo tocarmos um instrumento de corda, por exemplo, um violão, podemos perceber que o pulso se propaga através da corda e, quando atinge o <b><s>CAVALETE (RASTILHO)</s></b>, a onda sofre uma reflexão.
+	    \tNas cordas, essa reflexão ocorre como já vimos anteriormente, porém, dependendo da maneira como a corda está fixada, pode ocorrer uma <b><s>INVERSÃO DE FASE</s></b>.
+    </string>
+    <string name="txt_Reflexao_5_2">
+        \tComo podemos observar na animação, nas cordas em que uma das extremidades é fixa, a reflexão sempre ocorre com<b><s> INVERSÃO DE FASE </s></b>, ou seja, se o pulso estava \"para cima\", após a reflexão ele retorna com a fase \"para baixo\".
+    \n
+        <b>CORDA COM EXTREMIDADE LIVRE</b>
+        \tImagine uma corda em que uma das extremidades existe uma argola. Prenda essa argola em uma haste vertical gere um pulso nessa corda. Como irá ocorrer a reflexão quando esse pulso atingir a haste?
+    \n
+    </string>
+    <string name="txt_Reflexao_5_3">
+        \tAo produzir nesta corda um pulso, no momento que este pulso sofrer uma reflexão, sua fase será mantida. Este fato é possível, pois a extremidade da corda está  livre para mover-se.
+
+    </string>
+
+    <string name="ttl_Reflexao_6">\nDETERMINANDO A VELOCIDADE DE PROPAGAÇÃO DE UM PULSO EM UMA CORDA\n</string>
+    <string name="txt_Reflexao_6_1">
+        \tQuando um pulso se propaga em uma corda, podemos verificar se o pulso se move com rapidez ou se está se movendo de forma lenta.
+    \n
+        \t<b>Marin Marsenne  (1588 - 1648)</b> foi o primeiro a observar a relação entre a força que \"estica\" a corda, chamada de <b>tensão da corda </b>(perceba que em um violão, você pode controlar a tensão das cordas através das <b><s> TARRACHAS (CRAVELHAS) </s></b>) e a <b>densidade linear da corda (?) </b>.
+    </string>
+    <string name="txt_Reflexao_6_2">
+       \n\t<b>Brook Taylor  (1685 - 1731)</b> mais tarde, continuou o trabalho de Mersenne e definiu a relação abaixo:\n
+    </string>
+
+    <string name="ttl_Reflexao_7">\nMAS AFINAL, COMO OS RADARES CONSEGUEM DETERMINAR A INCIDÊNCIA DE CHUVA EM UMA DETERMINADA REGIÃO?\n</string>
+    <string name="txt_Reflexao_7">
+        De acordo com o site http://www.cptec.inpe.br/glossario.shtml#28 ,
+        <p> \"O princípio de funcionamento do radar meteorológico é análogo ao sistema de navegação de um morcego. O morcego emite sons de alta frequência que ao serem interceptados por obstáculos retornam ao ouvido do morcego. Quanto mais rápido o som retornar, mais perto estará o obstáculo e quanto mais distante este estiver, mais demorado será o retorno. Desta forma, o morcego é capaz de avaliar a distância ao obstáculo e se desviar do mesmo antes da colisão\".</p>
+    </string>
+
+    <string name="ttl_Reflexao_8">\nDETERMINANDO A DISTÂNCIA DE UMA NUVEM DE CHUVA ATRAVÉS DO RADAR METEOROLÓGICO\n</string>
+    <string name="txt_Reflexao_8">
+        \tSabendo que aquilo que conhecemos por micro-onda é uma onda eletromagnética e, no ar, tem uma velocidade muito próxima da luz no vácuo (c =3·?10?<sup>8</sup>  m/s), utilizamos a seguinte expressão:
+    \n
+    </string>
+
+    <!-- Refracao -->
+
+    <string name="ttl_Refracao_1">   Tsunami
+    </string>
+    <string name="txt_Refracao_1">
+        <p>Você já deve te ouvido falar dos Tsunamis que atingiram a Sri Lanka em 2004  e o Japão em 2011 .</p>
+    </string>
+    <string name="txt_Refracao_1_1">
+        <p>De acordo com o mini dicionário contemporâneo da língua portuguesa:</p>
+        \n\n
+        <p><b>TSUNAMI</b>. (Jap. / tsunâmi/ ) sm. Geog. Onda Gigantesca ou sucessão de ondas oceânicas que se deslocam em alta velocidade (podendo atingir mais de 700 km/h),
+         decorrente de maremotos, erupções vulcânicas etc., e que têm grande poder destrutivo quando alcançam a região costeira.
+        </p>
+        \n
+    </string>
+    <string name="txt_Refracao_1_2">
+        <p><b>QUAIS SÃO OS EVENTOS QUE PODEM CAUSAR UM TSUNAMI?</b></p>
+        \n\n
+        <p>De acordo com o site http://www.meted.ucar.edu</p>
+        \n\n
+        <p>     Como um tsunami é uma série de ondas causadas pelo grande
+            deslocamento de um certo volume de água no oceano, este pode ser formado
+            por meio de um ou mais destes processos:
+        </p>
+        \n\n
+        <p>•	Terremotos fortes no fundo do oceano (a mais comum);
+        </p>\n
+        <p>•	Deslizamentos de terra para dentro ou debaixo da água, quedas de rochas, ou quedas de gelo (bastante comum e frequentemente associados com terremotos);
+        </p>\n
+        <p>•	As erupções vulcânicas (pouco frequente e muitas vezes associadas com terremotos);
+        </p>\n
+        <p>•	Queda de Meteoritos (muito raro).
+        </p>
+        \n\n
+    </string>
+    <string name="txt_Refracao_1_3">
+        <p>
+                Mas, afinal, como a física é capaz de explicar e compreender essas
+            ondas gigantescas?
+        </p>\n\n
+    </string>
+
+    <string name="ttl_Refracao_2">
+    REFRAÇÃO \n\n
+    </string>
+    <string name="txt_Refracao_2">
+        <p><b>REFRAÇÃO</b>. [Do lat. refractione] S. f. [...]  2. Fís. Modificação da forma ou da direção de uma onda que, passando através da interface que
+            separa dois meios, tem, em cada um deles, diferentes velocidades de propagação. (FERREIRA, 1986)
+        </p>
+        <p>Como vimos na definição anterior, para que um fenômeno seja definido como refração, além da mudança de meio e de velocidade, o <b>COMPRIMENTO DE ONDA</b>
+            (λ)  também se altera.
+        </p>
+        <p>É importante lembrar que a única grandeza que não altera seu valor é a <b>FREQUÊNCIA</b> (f) , pois essa característica é definida pela fonte emissora,
+            ou seja, a fonte que produziu a onda.
+        </p>
+    </string>
+
+    <string name="ttl_Refracao_3">
+    LEIS DA REFRAÇÃO \n
+    </string>
+    <string name="txt_Refracao_3">
+        <p>Da mesma forma que a <b>REFLEXÃO</b>, a refração é norteada por duas (2) leis:
+        </p>
+        <p><b>1ª LEI</b>: A onda incidente, a onda refletida e a RETA NORMAL  à superfície estão sobre um mesmo plano, ou seja, são coplanares.
+        </p>
+        <p><b>2ª LEI</b>: A razão entre o seno do ângulo incidente (sen i ̂) e o seno do ângulo refretado (sen r ̂) é igual a razão entre a velocidade
+            da onda no meio incidente (v_1) e a velocidade da onda no meio refratado (v_2).
+        </p>
+    </string>
+    <string name="txt_Refracao_3_1">
+        <p>
+                Ainda podemos definir a segunda lei pensando em outra grandeza física: o comprimento de onda (λ). Como a frequência permanece constante (f1 = f2)
+            já que é definida pela fonte emissora), e lembrando que a velocidade de propagação de uma onda é a razão entre o comprimento de onda e a frequência
+            (v=λ∙f) chegamos a seguinte expressão:
+        </p>
+    </string>
+
+    <string name="ttl_Refracao_4">
+    REFRAÇÃO DE ONDAS EM UMA CORDA\n
+    </string>
+    <string name="txt_Refracao_4">
+        <p>Como vimos em <b>REFLEXÃO DE ONDAS EM UMA CORDA</b>, a velocidade de propagação desse pulso depende da <b>RAIZ QUADRADA ENTRE A FORÇA DE TRAÇÃO NA
+            CORDA E A SUA DENSIDADE LINEAR</b> .
+            <br/>
+        </p>
+        <p>Mas e se este pulso mudar de meio ou, no caso, mudar de corda? Imagine que duas cordas com diferentes densidades lineares (mesmo comprimento, porém,
+            com massas distintas) estão unidas e um pulso é criado em uma delas. O que irá acontecer quando esse pulso atingir o ponto que une essas duas cordas?
+        </p>
+    </string>
+    <string name="txt_Refracao_4_1">
+        <p>
+            Figura 6 - Refração nas cordas (Pulso se propaga da corda menos densa para a mais densa)
+        </p>
+    </string>
+    <string name="txt_Refracao_4_2">
+        <p>
+            Figura 7 - Refração nas cordas (Pulso se propaga da corda mais densa para a menos densa)
+        </p>
+        <p>
+            Observando as animações, verificamos que quando ocorre refração nas cordas, a frequência (f) e a FASE DO PULSO  não se alteram.
+        </p>
+        <p>
+            Na primeira animação (pulso se propagando da corda mais fina para a corda mais grossa), verificamos que a velocidade do pulso e o comprimento de onda
+            diminuem, já que a corda tem maior massa e o pulso encontra maior resistência para se propagar.
+        </p>
+        <p>
+            Já na segunda animação (pulso se propagando da corda mais grossa para a corda mais fina), a velocidade do pulso e o comprimento de onda aumentam.
+        </p>
+        <p>
+            Mas essas animações só mostram a refração da onda. Em geral, refração e reflexão são fenômenos que ocorrem de forma simultânea.
+        </p>
+    </string>
+    <string name="txt_Refracao_4_3">
+        <p>
+            Com estas animações, podemos perceber que:
+        </p>
+        <p>
+            Quando um pulso se propaga de uma corda menos densa (corda fina) para uma corda mais densa (corda grossa), temos:
+            <ul>
+                <li> Reflexão com inversão de fase;</li>
+                <li> Refração com diminuição de velocidade e comprimento de onda.</li>
+            </ul>
+        </p>
+        <p>  Quando um pulso se propaga de uma corda mais densa (corda grossa) para uma corda menos densa (corda fina), temos:
+            <ul>
+                <li> Reflexão com manutenção da fase;</li>
+                <li> Refração com aumento de velocidade e comprimento de onda.</li>
+            </ul>
+        </p>
+    </string>
+
+    <string name="ttl_Refracao_5">
+    MAS AFINAL, QUAL É A RELAÇÃO ENTRE A REFRAÇÃO E OS TSUNAMIS?\n
+    </string>
+    <string name="txt_Refracao_5">
+        <p>Quando dizemos que uma onda muda de meio, esta onda não precisa, por exemplo, propagar-se do ar para a água.
+        </p>
+        <p>Essa mudança pode ocorrer devido a uma diferença de profundidade no recipiente onde se encontra um líquido.
+        </p>
+        <p>
+            Na animação abaixo, podemos observar duas regiões:
+        </p>
+    </string>
+    <string name="txt_Refracao_5_1">
+        <p>
+            Na região mais profunda, as ondas têm uma velocidade (v_1) e um comprimento de onda (λ_1). Ao mudar para a região mais rasa, o comprimento de
+            onda (λ_2) e a velocidade (v_2) diminuem.
+        </p>
+        <p>
+            Mas porque mesmo com a diminuição da velocidade e comprimento de onda, as ondas de um tsunami chegam ao litoral com grande <b>AMPLITUDE</b> ?
+        </p>
+    </string>
+    <string name="txt_Refracao_5_2">
+        <p>Quando ocorre a formação de um Tsunami no meio do oceano, devido a uma erupção vulcânica ou ainda por um cisalhamento de placas tectônicas, ocorre
+            a liberação de uma grande quantidade de energia, que se propaga através das águas do oceano, formando centenas de pulsos simultâneos. Quando os pulsos
+            que estão na parte dianteira da onda perdem velocidade ao chegar a parte mais rasa (litoral), as ondas que estão vindo na parte traseira acabam se
+            empilhando com as ondas dianteiras,  aumentando a amplitude dos pulsos.
+        </p>
+    </string>
+
+    <string name="ttl_Refracao_6">
+        EXISTE ALGUMA PROTEÇÃO CONTRA TSUNAMIS?
+    </string>
+    <string name="txt_Refracao_6_1">
+        <p> Ainda não existe uma proteção perfeita contra os Tsunamis, porém há alguns projetos que podem minimizar os efeitos do fenômeno.
+        </p>
+        <p>	Uma nova proposta, noticiada pela Revista Galileu  é um quebra-mar flutuante que está sendo construído no Japão. As principais vantagens desse projeto
+            são que este não irá prejudicar o transporte marítimo e também não ira comprometer o visual da praia.
+        </p>
+        <p>	Isso é possível devido a um sistema de bolhas de ar que pode elevar esse quebra-mar , que está inicialmente no fundo do oceano até uma altura de 7
+            metros em relação a superfície.
+        </p>
+    </string>
+    <string name="txt_Refracao_6_2">
+        <p>	Quando o alarme de Tsunamis é acionado, é bombeado ar do litoral para o quebra-mar, que com a formação das bolhas o torna flutuante. Passado o perigo,
+            o ar é retirado e as colunas submergem .
+        </p>
+            Figura 9 - Funcionamento Quebra-Mar
+    </string>
+
+    <string name="ttl_Refracao_7">
+    NOÇÕES BÁSICAS DE SEGURANÇA EM CASO DE TSUNAMI\n
+    </string>
+    <string name="txt_Refracao_7">
+        <p>De acordo com o site http://whyfiles.org/2011/tsunami-the-killer-wave/ , algumas noções básicas podem salvar a vida de pessoas que estão em áreas com
+            risco de tsunami, sendo que a rápida ação e uma política publica de conscientização dos habitantes locais podem reduzir o número de mortos.
+        </p>
+        <p>I.	Esteja atento a tremores e terremotos fortes, pois esses podem desencadear um Tsunami. Caso esteja perto do mar, corra em direção a um lugar com
+            maior altitude no interior;
+        </p>
+        <p>II.	Preste muita atenção nos avisos, fique atento às estações de rádio;
+        </p>
+        <p>III.	NUNCA vá até à praia para assistir a um tsunami - eles se movem muito mais rápido do que você pode correr. As pessoas acabam morrendo ao fazer
+            isso;
+        </p>
+        <p>IV.	A maioria das estruturas na zona de perigo oferecem pouca ou nenhuma proteção. No entanto, os andares mais elevados de hotéis de concreto armado
+            podem fornecer refúgio, isso se você não tiver tempo para ir até o interior ou para terrenos mais elevados;
+        </p>
+        <p>V.	Um tsunami não se limita apenas a uma onda, ele é uma série de ondas. Não vá perto da água até ouvir o comunicado de autoridades de emergência
+            que já é seguro.
+        </p>
+    </string>
+
+    <string name="ttl_Refracao_8">
+        VÍDEO: COMO FUNCIONAM OS TSUNAMIS\n
+    </string>
+    <string name="txt_Refracao_8">
+        <p>Sobre o <b>TED</b> (Texto extraído do site https://www.ted.com/# em 11 Set. 2015)
+        </p>
+        <p><b>TED</b> é uma plataforma de ideias que merecem ser espalhadas. Iniciado em 1984 como uma conferência onde a tecnologia, entretenimento e design
+            convergiram, <b>TED</b> compartilha ideias de amplos aspectos - da ciência empresariais até questões globais - em mais de 100 línguas. Enquanto isso,
+            eventos independentes, como o TEDx ajudar a compartilhar ideias em comunidades ao redor do mundo.
+        </p>
+        <p>
+        </p>VÍDEO 01: How tsunamis work - Alex Gendler (EM INGLÊS)
+            https://www.youtube.com/watch?v=Wx9vPv-T51I
+    </string>
+
+    <string name="ttl_Refracao_9">
+        A CIÊNCIA NA NATUREZA E NO DIA A DIA\n
+            FIBRA ÓPTICA\n
+    </string>
+    <string name="txt_Refracao_9_1">
+        <p>Graças ao advento da internet na década de 70, foi possível uma revolução na forma que trocamos informações com outras pessoas e até mesmo com
+            sistemas informatizados, tais como bancos ou serviços de atendimento de lojas ou órgãos públicos.
+        </p>
+        <p>	Mas como transmitir informações de forma tão rápida e segura? Essa inovação foi possível através da utilização da fibra óptica
+        </p>
+    </string>
+    <string name="txt_Refracao_9_2">
+        <p>	Mas afinal, como funciona a fibra óptica?
+        </p>
+        <p>	O principio físico que faz com que a fibra ótica seja um elemento cada vez mais utilizado é que a informação é capaz de viajar na velocidade da
+            luz (cerca de 300.000 km/s). Para termos uma ideia, nessa velocidade seria possível dar cerca de 7 voltas na Terra em apenas 1 segundo.
+        </p>
+        <p>	A fibra óptica nada mais é do que o caminho pelo qual a luz pode percorrer entre dois pontos, sem perder a informação que ela contém. Dessa forma,
+            o feixe de luz acompanha a curvatura do material. A razão pela qual a luz consegue seguir uma trajetória curva na fibra óptica é devido ao fenômeno
+            da refração.
+        </p>
+        <p>	Quando um raio de luz passa de um meio de maior para um meio de menor <b>ÍNDICE DE REFRAÇÃO</b> , a luz sofre um desvio na sua trajetória, afastando-se
+            da <b>RETA NORMAL</b> . A medida que vamos aumentando o ângulo de incidência (i ̂), o ângulo de refração (r ̂) também aumenta, até que para um determinado
+            valor do ângulo i ̂, o raio refratado irá sair rasante a superfície (r ̂=90°). Esse valor do ângulo i ̂ é chamado de <b>ÂNGULO LIMITE</b>.
+        </p>
+    </string>
+    <string name="txt_Refracao_9_3">
+        <p>	Quando o raio incidir na superfície de separação dos meios com ângulo maior que o ângulo limite, o feixe luminoso não irá mais mudar de meio,
+            ocorrendo o fenômeno chamado de REFLEXÃO TOTAL.
+        </p>
+    </string>
+    <string name="txt_Refracao_9_4">
+        <p>	Na fibra óptica, quando o raio de luz é emitido para que ocorra a transmissão de dados, o raio incidente é emitido com ângulo incidente maior que
+            o ângulo limite, possibilitando que o feixe de luz contendo as informações realize sucessivas reflexões no interior da fibra óptica, dessa forma,
+            acompanhando sua curvatura.
+        </p>
+    </string>
+
+    <!-- Difracao -->
+
+    <string name="ttl_Difracao_1">
+        WIRELLES\n
+    </string>
+    <string name="txt_Difracao_1">
+        <p>	Atualmente, é quase impossível pensar na nossa sociedade sem o advento da internet: Transações bancárias, comunicação, entretenimento.
+         Até as antigas videolocadoras foram substituídas por serviços de <b>streaming</b> .
+        </p>
+        <p>	Um dos grandes avanços que possibilitou e popularizou o acesso a internet foi o a invenção da Rede sem fio, conhecida como WIRELLES.
+        </p>
+        <p>	De acordo com o site <b>TechTudo</b> :
+        </p>
+        <p>	A tecnologia Wireless significa “sem fio” (em livre tradução), e possibilita a transmissão da conexão entre pontos distantes sem
+         precisar usar fios (como telefones sem fio, rádios ou o seu celular). Essa tecnologia engloba uma série de outras, sendo a mais comum
+         delas a Wi-Fi. Algumas delas são:
+        </p>
+        <lu>
+            <li><b>IrDA</b>: transmissão de dados por um adaptador infravermelho, não possui armazenamento de dados. Somente envio e recebimento.</li>
+            <li><b>BlueTooth</b>: muito utilizada em celulares e smartphones, permite com que se troque informações com muita facilidade. Seu ponto
+            negativo é a necessidade de estar muito perto do dispositivo para haver a conexão.</li>
+            <li><b>RONJA</b>: transmite dados usando feixes de luz.</li>
+            <li><b>WI-FI</b>: seu acesso se dá por um ponto de acesso conhecido como Hot spot, e é possível acessar qualquer dispositivo por sua rede.</li>
+        </lu>
+        <p>	Mas como é possível um dispositivo móvel receber sinais WI-FI mesmo estando atrás de portas e paredes? O conceito físico que explica
+         a \"curva\" realizada pela onda chama-se <b>DIFRAÇÃO</b>.
+        </p>
+    </string>
+
+    <string name="ttl_Difracao_2">
+        DIFRAÇÃO
+    </string>
+    <string name="txt_Difracao_2_1">
+        <p>De acordo com o dicionário (Ferreira, 1986):</p>
+        <p> <b>DIFRAÇÃO</b> [De di- + lat. fractione, \'ato de quebrar\'.] S.f. Fís. Fenômeno que ocorre quando uma onda caminhante é limitada, em seu avanço, por um objeto opaco que deixa de passar apenas uma fração das frentes de onda, e que pode ser observado como uma propagação da onda para regiões além do objeto e situadas na sombra deste em relação à direção da onda incidente, ou como a propagação da onda em direções preferenciais, etc.
+        </p>
+        <p>
+            Como vimos na definição, a capacidade de uma onda transpor obstáculos, tais como objetos opacos e fendas, é chamado de DIFRAÇÃO.
+        </p>
+    </string>
+    <string name="txt_Difracao_2_2">
+        <p>	É importante ressaltar que a difração ocorre quando o comprimento da onda tem ordem de grandeza semelhante das dimensões do obstáculo a ser transposto.</p>
+        <p>	Com isso, embora todas as ondas estejam sujeitas ao fenômeno da difração, somente em alguns casos podemos perceber esse fenômeno. </p>
+        <p>	Por exemplo, é fácil perceber que uma onda sonora consegue transpor um grande objeto. Isso se dá devido ao fato de uma onda sonora ter um grande
+         comprimento de onda.</p>
+        <p>	De acordo com o site http://www.voz.fob.usp.br/do/Conteudo_View/42/anatomia_funcional/69/frequencia_de_vibracao/1, a voz masculina de um homem
+         de 24 anos tem uma frequência fundamental de 100 Hz. Se em um ambiente a velocidade do som é de aproximadamente 340 m/s podemos calcular o comprimento
+         de onda dessa voz pela expressão:</p>
+    </string>
+    <string name="txt_Difracao_2_3">
+        <p>	Com isso, chegamos a conclusão que essa voz tem comprimento de onda próximo de 3,4 m. Ou seja, a voz desse rapaz é capaz de transpor objetos com
+         dimensões semelhantes a 3,4 m.</p>
+        <p>	A Figura 1 - Difração de uma onda sonora , mostra que é possível ouvir o som produzido por uma explosão que se situa atrás de um muro, mesmo
+         que este tenha grande espessura de tal forma que as ondas sonoras não consigam atravessá-lo, porém, a luz provinda do objeto não pode ser vista,
+         já que a ordem de grandeza do seu comprimento de onda não é da ordem das dimensões do muro (O comprimento de onda da luz tem ordem de 〖10〗^(-6)  m).</p>
+
+    </string>
+    <string name="txt_Difracao_2_4">
+        <p>	Para entendermos melhor esse fenômeno, devemos compreender o <b>princípio de Huygens</b>.</p>
+    </string>
+
+    <string name="ttl_Difracao_3">
+        PRINCÍPIO DE HUYGENS\n
+    </string>
+    <string name="txt_Difracao_3_1">
+        <p>A primeira pessoa a explicar como teoria ondulatória também pode explicar as leis da óptica geométrica foi <b>Christiaan Huygens (1629 - 1695)</b>  em 1670.
+         Na época, é claro, ninguém deu a menor atenção à ele. Seu trabalho foi redescoberto mais tarde após o eventual triunfo da teoria ondulatória.
+        </p>
+    </string>
+    <string name="txt_Difracao_3_2">
+        <p>	Huygens teve uma visão muito importante sobre a natureza da propagação de ondas que hoje é chamado de princípio de Huygens. Quando aplicado à propagação de ondas de luz, este princípio estabelece que:
+        </p>
+        <p>	"Cada ponto de uma frente de onda pode ser considerado uma fonte de ondas esféricas secundárias que se espalhou para fora na direção de avanço na velocidade da luz. O novo de frente de onda é a superfície tangencial para todas estas ondas secundárias.\"
+        </p>
+        <p>	De acordo com o princípio de Huygens, uma onda de luz plana propaga no espaço livre na velocidade da luz, c . Os raios de luz associados com esta de frente de onda se propagam em linha reta, como pode ser visto na ANIMAÇÃO 01.
+        </p>
+    </string>
+    <string name="txt_Difracao_3_3">
+        <p>	É também bastante simples para explicar as leis da <b>REFLEXÃO</b>  e <b>REFRAÇÃO</b>  usando o princípio Huygens.
+        </p>
+        <p>	De acordo com Nardy (2015), as construções geométricas mostrando como a luz é refletida ou refratada, baseiam-se no Princípio de Huygens (1690).
+        </p>
+    </string>
+
+    <string name="ttl_Difracao_4">
+        REFLEXÃO DE ACORDO COM HUYGENS\n
+    </string>
+    <string name="txt_Difracao_4_1">
+        <p>Como podemos observar em Nardy (2015):
+        </p>
+        <p>	A lei fundamental sobre a reflexão afirma que os ângulos de incidência e reflexão medidos à partir de uma normal à superfície refletora são
+            iguais e situam-se no mesmo plano (ou seja são coplanares) denominado plano de incidência. Admitindo-se um meio como sendo isotrópico e
+            aplicando-se o Princípio de Huygens (1690), pode-se determinar a frente de onda dos raios refletidos, traçando-se uma linha tangente às superfícies
+            de onda dos raios de luz incidentes ((f – f’) ̅), sendo que os raios refletidos serão perpendiculares a esta superfície.
+        </p>
+    </string>
+    <string name="txt_Difracao_4_2">
+        <p>	Com isso, observa-se que o ângulo de incidência (i) é igual ao do raio refletido (r) e, os raios incidentes, refletidos e a normal à superfície
+            refletora (n), são coplanares.
+        </p>
+    </string>
+
+    <string name="ttl_Difracao_5">
+        REFRAÇÃO DE ACORDO COM HUYGENS\n
+    </string>
+    <string name="txt_Difracao_5_1">
+        <p>Ainda de acordo Nardy (2015):</p>
+        <p>	Quando um raio de luz atinge uma superfície que separa dois meios (no presente caso é o isotrópico), parte da luz é refletida e a outra penetra
+            no meio sendo desviada ou refratada. Admitindo-se: como \"V1\" a velocidade de propagação no meio 1 e \"V2\" a velocidade de propagação no meio 2 e
+            que V1 > V2 e <over-line>(b – b’)</over-line> a frente de onda dos raios incidentes; a partir do Princípio de Huygens onde os pontos de impacto
+            da luz no contato	entre os dois meios <over-line>( g - g’)</over-line> agem como fontes secundárias de luz, pode-se determinar a direção de
+            propagação dos raios refratados.
+        </p>
+    </string>
+    <string name="txt_Difracao_5_2">
+        <p>	Admitindo-se um meio como sendo isotrópico, traçada a frente de onda dos raios refratados, ou seja <over-line>(f – f’)</over-line>, a trajetória
+         dos raios de luz será	aquela perpendicular a <over-line>(f –f)</over-line> e de acordo com o princípio da refração, o raio incidente, o raio refratado
+         e a normal <over-line>(n-n’)</over-line> à superfície de separação entre os dois meios <over-line>(g-g’)</over-line> são coplanares.
+        </p>
+    </string>
+
+    <string name="ttl_Difracao_6">
+        DUALIDADE ONDA PARTÍCULA - CONTEXTO HISTÓRICO\n
+    </string>
+    <string name="txt_Difracao_6_1">
+        <p>	No início do século XX, <b>Albert Einstein (1879 - 1955)</b>  deu algumas respostas a algumas questões abertas pela ciência com sua teoria da
+            relatividade restrita.</p>
+    </string>
+    <string name="txt_Difracao_6_2">
+        <p>	Porém, alguns problemas ainda rondavam os físicos da época. A abordagem clássica da física mostrava-se incapaz de explicar alguns fenômenos,
+            tais como a emissão de radiação de corpos aquecidos e o efeito fotoelétrico.</p>
+        <p>	Entre 1900 e 1930, uma nova física foi proposta, chamada de MECÂNICA QUÂNTICA, capaz de explicar o comportamento dos átomos e moléculas em
+            diversas situações. </p>
+        <p>	Inicialmente chamada de teoria dos Quanta, proposta por <b>Max Planck (1858 - 1947)</b> , foi desacreditada pelo próprio Planck. Isso se deu pois
+            essa teoria necessitava de uma revisão de ideias e maneiras de entender o Mundo que nos cerca.</p>
+    </string>
+    <string name="txt_Difracao_6_3">
+        <p>	A primeira ideia que devemos entender é o conceito de RADIAÇÃO DO CORPO NEGRO. </p>
+        <p>	De acordo com o ponto de vista clássico, uma radiação térmica se origina do movimento de partículas carregadas eletricamente que se movem de
+            forma acelerada na superfície de um corpo.</p>
+        <p>	Assim, essas partículas deveriam emitir radiação de forma contínua, sendo que a cor azul, anil e violeta, que possuem maior frequência deviam
+            emitir com maior intensidade.</p>
+        <p>	Experimentalmente, não era isso que os cientistas da época observavam.
+            Em 1900, Planck desenvolveu um modelo matemático para explicar a radiação emitida pelos corpos, porém, para que sua proposta coincidisse com
+            os dados experimentais, ele teve que adotar que a emissão de energia não era contínua, sendo esta emitida em pequenos pacotes energéticos,
+            chamado Quanta. </p>
+        <p>	Em 1905, Einstein expandiu o trabalho de Planck sobre a quantização da energia para as ondas eletromagnéticas em geral. Assim, propôs que
+            a luz e as demais radiações eletromagnéticas seriam um feixe de pequenos pacotes energéticos.</p>
+        <p>	Em 1926 foi atribuído ao quanta o nome de <b>fótons</b>, que significa \"pacotes\" de luz.
+            Essas ideias deveriam ser uma forte evidência para acreditamos na luz possui apenas uma característica corpuscular. Entretanto, a DIFRAÇÃO
+            e a INTERFERÊNCIA só são explicadas quando adotamos a luz com características ondulatórias. Afinal, qual é a característica correta?</p>
+        <p>	<b>Niels Bohr (1885 - 1962)</b>  propôs em 1927 o princípio da complementaridade:</p>
+    </string>
+    <string name="txt_Difracao_6_4">
+        <p>	<b>"No nível quântico, ambos os aspectos, o corpuscular e o ondulatório são necessários para uma descrição completa do sistema estudado\"</b>
+        </p>
+        <p>	Assim, chegamos a seguinte conclusão: a luz é, ao mesmo tempo, onda e partícula. Essas duas ideias se completam e não podem ser separadas.</p>
+        <p>	Porém, só podemos analisar o comportamento da luz como onda ou partícula se interagirmos com ela.</p>
+    </string>
+
+    <string name="ttl_Difracao_7">
+        MAS AFINAL, COMO UM DISPOSITIVO MÓVEL PODE RECEBER SINAL MESMO ATRÁS DE PAREDES E PORTAS?\n
+    </string>
+    <string name="txt_Difracao_7_1">
+        <p>De acordo com PIAZZI (2010), temos a seguinte ideia:</p>
+        <p>	Imagine um fóton se movendo em linha reta. Se um feixe deles incidir sobre uma parede, como mostra a Figura 6 - Feixe de fótons se propagando
+         por uma fenda (Partícula) , apenas os que não encontrarem resistência vão chegar ao outro lado.
+         </p>
+
+    </string>
+    <string name="txt_Difracao_7_2">
+        <p>	Se consideramos o sinal Wirelles com um comportamento corpuscular, em um ponto P (como na imagem acima), não poderíamos receber o sinal de internet.</p>
+        <p>	Como vimos no tópico anterior, um fóton pode se comportar como uma sucessão de ondas, como podemos visualizar na Figura 7 - Feixe de fótons se
+         propagando por uma fenda (Onda) :
+        </p>
+
+    </string>
+    <string name="txt_Difracao_7_3">
+        <p>	Ao se deparar com a parede, da nova \"personalidade\" dos fótons produz um fenômeno característico das ondas: a <b>difração</b>. É como se a esquina
+         da parede, ao ser atingida pelas ondas, começasse a se comportar como uma fonte secundária. A propagação seria, então, como na Figura 8 - Difração
+         ocorrendo em um feixe de fótons :
+        </p>
+    </string>
+    <string name="txt_Difracao_7_4">
+        <p>	Ao observar a Figura 8 - Difração ocorrendo em um feixe de fótons, percebemos que, mesmo assim, o dispositivo localizado no ponto P não receberá
+            o sinal que eu estava procurando.</p>
+        <p>	A difração é mais acentuada quanto maior for o comprimento de onda. Assim, quanto menor a frequência do roteador, maior comprimento de onda, ou
+            seja, mais distanciadas estão as cristas, e, consequentemente, o dispositivo no ponto P poderá receber o sinal emitido, como apresentado na
+            Figura 9 - Onda atinge o ponto P por difração :
+        </p>
+        Figura 9 - Onda atinge o ponto P por difração
+    </string>
+    <string name="txt_Difracao_7_5">
+        <p>	Como podemos perceber, o sinal Wirelles consegue atingir o dispositivo, mesmo tendo um obstáculo direto entre o roteador emissor e o dispositivo.</p>
+        <p>	Esse fato só é possível devido ao fenômeno da DIFRAÇÃO.</p>
+    </string>
+
+    <string name="ttl_Difracao_8">
+        O QUE É ESPECTROSCOPIA?\n
+    </string>
+    <string name="txt_Difracao_8">
+        <p>De acordo com o dicionário (Ferreira, 1986):
+        </p>
+        <p>	<b>ESPECTROSCOPIA</b>. [De espectro + -scop- + -ia] S.f. Quím. Conjunto de técnicas de análise qualitativa baseada na observação de espectros de emissão e absorção de substâncias.
+        </p>
+        <p>	Através da espectroscopia, podemos definir quais são as substâncias que compõe um determinado objeto, analisando o espectro luminoso emitido por esse objeto. Mas afinal, onde podemos utilizar esse método?
+        </p>
+    </string>
+
+    <string name="ttl_Difracao_9">
+        QUAL A FUNÇÃO DA ESPECTROSCOPIA\n
+    </string>
+    <string name="txt_Difracao_9_1">
+        <p>Desde a antiguidade podemos observar no céu a formação do arco-íris, que hoje sabemos que nada mais é que a decomposição da luz solar, porém, foi
+         Newton o primeiro a escrever sobre o fenômeno da decomposição da luz, utilizando para tanto, um prisma.
+        </p>
+        </string>
+    <string name="txt_Difracao_9_2">
+        <p>	Esse conjunto de cores obtidas com o prisma é chamado de espectro. Esse experimento explicou o espectro visível da luz, sendo que esse experimento
+            deu subsidio para a criação dos espectroscópios.</p>
+        <p>	A espectroscopia é um método extremamente utilizado dentro da ASTRONOMIA, já que é através dela que podemos descobrir do que é feito uma estrela.</p>
+        <p>	De acordo com o site da <b>FUNDAÇÃO PLANETÁRIO DA CIDADE DO RIO DE JANEIRO</b> :
+            Isso tem a ver, também, com a natureza da matéria. O modelo atômico que usamos ainda hoje é o do “átomo de Bohr”, que representa o átomo como sendo
+            formado por um núcleo central, rodeado por elétrons que giram ao seu redor. O átomo não é exatamente isso, mas este modelo é bom o bastante para
+            explicar os fenômenos observados.</p>
+        <p>	Cada elemento químico tem uma configuração de elétrons diferente. É isso que caracteriza um elemento químico. Assim, cada elemento químico funcionará
+            como uma “peneira” única e inconfundível para a radiação produzida dentro de uma estrela. Logo, ao estudarmos o espectro estelar, conseguimos
+            descobrir quais as “peneiras” pelas quais aquela radiação passou e, portanto, sabemos quais os elementos químicos que existem nas camadas externas
+            daquela estrela.</p>
+        <p>	E é assim que sabemos do que uma estrela é feita. A espectroscopia é um testemunho duradouro da inventividade humana. (CHERMAN, 2011)</p>
+    </string>
+
+    <string name="ttl_Difracao_10">
+        VÍDEO: ESPECTROSCÓPIO - PORTAL CIÊNCIA WEB\n
+    </string>
+    <string name="txt_Difracao_10">
+        <p>	<b>O Portal Ciência Web</b>  é um veículo da Agência Multimídia de Difusão Científica e Educacional que publica vídeos produzidos em colaboração com
+            escolas públicas de Ensino Médio e grupos acadêmicos para apoiar o ensino de Ciências e divulgar a produção universitária.</p>
+        <p>	Com sede no Instituto de Estudos Avançados (IEA) - Polo São Carlos, da Universidade de São Paulo (USP), a Agência é mantida por meio de
+            convênios com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), Fundação de Amparo à Pesquisa do Estado de São Paulo
+            (Fapesp) e a Fundação para o Incremento da Pesquisa e do Aperfeiçoamento Industrial (Fipai).</p>
+    </string>
+
+    <!-- Interferencia -->
+
+    <string name="ttl_Interferencia_1">
+	    CONTROLE ATIVO DE RUIDO\n
+	</string>
+	<string name="txt_Interferencia_1">
+        <p>	Você já deve ter passado maus momentos em locais onde o nível de ruído era muito intenso, como em construções, avenidas movimentadas,
+            aeroportos ou mesmo em uma sala de aula.</p>
+        <p>	De acordo com Harris (2007), há basicamente duas maneiras de minimizar os ruídos, sendo uma PASSIVA e outra ATIVA.</p>
+        <p> 	O controle PASSIVO de ruído tem como principal função atenuar as ondas sonoras, principalmente as de alta frequência, utilizando
+            materiais como a espuma de alta densidade.  Esse material atenua a intensidade do som em até 20 decibels (dB).</p>
+        <p>	Entretanto, tais materiais possuem baixa eficiência, principalmente diante de sons bem mais intensos, como os ruídos de uma turbina
+            dentro da cabine de uma aeronave.</p>
+        <p>	Nesse caso, faz-se necessário utilizar um CONTROLE ATIVO DE RUIDO, que possui as mesmas propriedades de um dispositivo de controle
+            passivo, porém, este é capaz de produzir uma onda sonora similar as do ruído do ambiente, porém, com uma pequena diferença: A onda
+            criada está em OPOSIÇÃO DE FASE com a onda original.</p>
+        <p>	Mas a principal questão nesse aspecto é: É possível duas ondas sonoras, quando juntas, gerarem silêncio? Sim, isso é possível, graças
+            ao fenômeno da INTEFERÊNCIA.</p>
+	</string>
+
+	<string name="ttl_Interferencia_2">
+	    INTERFERÊNCIA DE ONDAS - DEFINIÇÃO\n
+	</string>
+	<string name="txt_Interferencia_2">
+        <p>	<b>INTERFERÊNCIA</b>. [Do ingl. inteference.] S.f. 1. Intervenção (1). 2. Fís. Superposição de dois ou mais trens de onda, de frequência igual,
+            com relações de fase constante no tempo, que provoca a distribuição de energia das ondas ao longo de superfícies ou linhas preferencialmente
+            fixas no espaço. 3. Telecom. Sinais espúrios que, durante o processo de transmissão de um sinal, de telecomunicações, a ele se superpõem
+            perturbando ou mascarando o seu entendimento.</p>
+
+        <p>	O conceito de interferência de onda é amplamente notado no dia a dia, porém pouco compreendido. Quando um celular recebe uma ligação \"cruzada\",
+            quando utilizamos um Headphone que \"cancela\" ruídos externos ou ainda quando vemos as cores do arco-íris em uma mancha de óleo, todos esses
+            fenômenos são decorrentes da interferência de ondas.</p>
+	</string>
+
+	<string name="ttl_Interferencia_3">
+	    INTERFERÊNCIA DE ONDAS UNIDIMENSIONAIS\n
+	</string>
+	<string name="txt_Interferencia_3_1">
+		<p> Para iniciar a explicação destes fenômenos, vamos analisar a interferência ocorrendo em ondas unidimensionais. Para ilustrar essa ideia,
+		iremos utilizar a propagação de um pulso em uma corda para analisarmos esse fenômeno. </p>
+		<p> Inicialmente, em uma corda tensionada, dois pulsos de mesma fase  irão se propagar, de forma que estes estão se propagando em sentidos
+		opostos, como podemos observar na ANIMAÇÃO 01.</p>
+	</string>
+	<string name="txt_Interferencia_3_2">
+        <p>	Como podemos perceber, no momento que esses pulsos ocupam a mesma posição, ocorre uma SUPERPOSIÇÃO de ondas, gerando por um breve instante,
+            uma onda resultante com amplitude MAIOR, sendo que essa amplitude é, na verdade, a soma algébrica das amplitudes das ondas. Essa
+            interferência é chamada INTERFERÊNCIA CONSTRUTIVA, ou apenas IC.</p>
+
+        <p>	Agora, vamos analisar a ANIMAÇÃO 02. Nesse caso, podemos observar dois pulsos se propagando em uma corda com OPOSIÇÃO DE FASE, ou seja,
+            um pulso \"para cima\" e outra \"para baixo\". </p>
+	</string>
+	<string name="txt_Interferencia_3_3">
+        <p>	Como podemos observar, por um breve intervalo de tempo, ocorreu superposição de ondas, gerando uma onda resultante menor ou nula.
+            Essa interferência é chamada INTERFERÊNCIA DESTRUTIVA, ou apenas ID, sendo que a amplitude da onda resultante é a diferença entre as
+            amplitudes das ondas que se interferem.</p>
+
+        <p>	É relevante perceber que esse fenômeno está sendo observado de forma isolada. O mesmo fenômeno pode ocorrer também com ondas senoidais,
+            como podemos observar na animação abaixo:</p>
+
+        ANIMAÇÃO 03 - INTERFERENCIA DE ONDAS SENOIDAIS
+	</string>
+
+	<string name="ttl_Interferencia_4">
+	    INTERFERÊNCIA DE ONDAS BIDIMENSIONAIS\n
+	</string>
+	<string name="txt_Interferencia_4_1">
+        <p>	Nesse momento, iremos tratar de definir a interferência de ondas bidimensionais. Para facilitar a compreensão do fenômeno, iremos tratar esse
+            fenômeno utilizando uma onda produzida na superfície de uma cuba contendo um líquido, tal como a água.</p>
+        <p>	Se colocarmos uma fonte pulsante na superfície da água, podemos perceber que nesta irá se formar uma sucessão de pulsos circulares, tal como
+            na ANIMAÇÃO 04. Para compreendermos com mais facilidade a animação, adote a ideia de que as linhas são as cristas da onda.</p>
+        ANIMAÇÃO 04 - PULSO CIRCULAR SUPERFÍCIE DA ÁGUA
+	</string>
+	<string name="txt_Interferencia_4_2">
+        <p>	Se colocarmos nessa mesma superfície duas fontes, criando ondas circulares nessa superfície, o que poderemos observar é uma sequência de
+            interferências construtivas e destrutivas, como observamos na ANIMAÇÃO 05:</p>
+        ANIMAÇÃO 05 - INTERFERÊNCIA NA SUPERFÍCIE DA ÁGUA
+	</string>
+	<string name="txt_Interferencia_4_3">
+        <p>	Como podemos observar, em alguns pontos da superfície da água há um aumento da amplitude das ondas, ou seja, nesses pontos estão se formando
+            interferências construtivas. Podemos observar que na Figura 1 - INTERFERÊNCIA CONSTRUTIVA (IC), está ocorrendo uma IC nos pontos X, Y e Z.
+            Nesses pontos, há encontro entre cristas ou vales.</p>
+        Figura 1 - INTERFERÊNCIA CONSTRUTIVA (IC)
+	</string>
+	<string name="txt_Interferencia_4_4">
+        <p>	Podemos observar ainda, alguns pontos onde ocorre uma interferência destrutiva, ou seja, uma diminuição na amplitude da onda. Essa diminuição
+            pode ser tão significativa que pode fazer com que naquele ponto, nem dê para perceber que há um pulso de uma onda. Esse caso pode ser observado
+            na Figura 2 - INTERFERÊNCIA DESTRUTIVA (ID), nos pontos M, N e P.</p>
+        Figura 2 - INTERFERÊNCIA DESTRUTIVA (ID)
+	</string>
+
+	<string name="ttl_Interferencia_5">
+	    EXPERIMENTO DA DUPLA FENDA DE YOUNG\n
+	</string>
+	<string name="txt_Interferencia_5_1">
+        <p>	De acordo com Santos (2002),
+        </p>
+        <p>	Sir Isaac Newton (1642-1727)  defendia a hipótese de que a luz era constituída de corpúsculos.
+        </p>
+        Figura 3 - ISAAC NEWTON
+	</string>
+	<string name="txt_Interferencia_5_2">
+        <p>	Os principais fenômenos ópticos (reflexão e refração) podiam ser explicados com o uso da teoria corpuscular. Este modelo era combatido por
+            Christiaan Huygens (1629-1695) , que defendia a teoria ondulatória. No entanto, a autoridade científica de Newton fez prevalecer sua teoria
+            por mais de um século.</p>
+        Figura 4 - CHRISTIAAN HUYGENS
+	</string>
+	<string name="txt_Interferencia_5_3">
+        <p>	Por volta de 1801, uma bela experiência realizada por <b>Thomas Young (1773-1829)</b>  resolveu a questão favoravelmente a Huygens.</p>
+        Figura 5 - THOMAS YOUNG
+	</string>
+	<string name="txt_Interferencia_5_4">
+        <p>	A experiência de Young provou que a luz era uma onda, porque os fenômenos da difração e da interferência, por ele descobertos, eram características
+            exclusivamente ondulatórias.</p>
+        <p>	De acordo com TORRES (2013):</p>
+        <p>	Em 1801, o experimento de Young, a luz solar incidia sobre uma tela opaca, na qual havia duas fendas estreitas, como na Figura 6.
+        </p>
+        Figura 6 - DUPLA FENDA
+	</string>
+	<string name="txt_Interferencia_5_5">
+        <p>	Ao contrário do que esperava, ao invés de observar o surgimento de apenas 2 linhas brilhantes, Young observou uma série de linhas brilhantes,
+         com intensidades variáveis, resultado que era condizente com o comportamento ondulatório da luz e com o fenômeno da interferência de ondas, como
+         podemos observar na Figura 7.
+        </p>
+        Figura 7 - RESULTADO DUPLA FENDA
+	</string>
+	<string name="txt_Interferencia_5_6">
+        <p>	Considere agora uma fonte luminosa emitindo um feixe luminoso em um anteparo com apenas uma fenda, como na Figura 8.
+        </p>
+        Figura 8 - ANTEPARO COM UMA FENDA
+	</string>
+	<string name="txt_Interferencia_5_7">
+        <p>Após passar pela primeira fenda, a luz sofre DIFRAÇÃO e nesse momento, um novo anteparo é posto diante dela, como podemos observar na Figura 9.
+        </p>
+        Figura 9 - SEGUNDO ANTEPARO COM DUPLA FENDA
+	</string>
+	<string name="txt_Interferencia_5_8">
+	    O que Young esperava? Que logo atrás do 2º anteparo não chegaria nenhuma luz, já que naquele momento, a teoria corpuscular da luz ainda era a mais aceita. Para sua surpresa, o que se formou logo atrás do anteparo foi algo próximo com a Figura 10.
+
+	    Figura 10 - RESULTADO DO EXPERIMENTO YOUNG
+	</string>
+	<string name="txt_Interferencia_5_9">
+	    <p>	Esse experimento deixou evidente a natureza ondulatória da luz e possibilitou explicar de maneira mais adequada o fenômeno da interferência de ondas.</p>
+	</string>
+
+	<string name="ttl_Interferencia_6">
+	    PORQUE NO ANTEPARO HÁ PARTES ILUMINADAS E PARTES SEM ILUMINAÇÃO?\n
+	</string>
+	<string name="txt_Interferencia_6_1">
+        <p>	Isso ocorre devido ao fenômeno da interferência entre os raios de luz. Em alguns momentos, há interferência construtiva (IC), fazendo com que
+            naquele ponto exista luz. Já em alguns pontos, ocorreu uma interferência destrutiva (ID), fazendo com que naquele ponto, não fique iluminado.</p>
+        <p>	Podemos observar que isso ocorre devido a uma diferença de percurso (Δx) que surgiu entre as distâncias percorridas pelos os raios de luz.
+            Para ficar mais claro o conceito de diferença de percurso, vamos pensar em um exemplo, utilizando duas fontes sonoras (F1 e F2) e um observador (P).</p>
+        <p>	Em um primeiro momento, um observador (P) se encontra em um ponto equidistante das duas fontes (F1 e F2), como na Figura 11.</p>
+        Figura 11 - OBSEVADOR EM UM PONTO EQUIDISTANTE DAS FONTES
+	</string>
+	<string name="txt_Interferencia_6_2">
+        <p>	Nesse momento, a diferença de percurso é ZERO (Δx = 0), pois como o próprio termo define, como a distância entre o observador (P) e a fonte F1
+            (que para fins didáticos, vamos definir como 10 metros), é igual a distância entre o observador P e a fonte F2 (também 10 metros).</p>
+        <p>	Agora, se o observador P se deslocar 3 metros em direção a fonte F1, teremos novas distâncias entre as fontes e o observador. A distância entre
+            F1 e P será agora de 7 metros, enquanto entre a fonte F2 e P será de 13 metros, como podemos observar na Figura 12.</p>
+        Figura 12 - CONCEITO DIFERENÇA DE PERCURSO
+	</string>
+	<string name="txt_Interferencia_6_3">
+        <p>	Assim, para calcularmos Δx, utilizaremos a seguinte expressão:</p>
+
+        <p>FÓRMULA ?? ΔX = |D1 - D2|</p>
+
+        <p>	Por essa expressão, chegamos a conclusão que a diferença de percurso vale 5 metros (ΔX = 5 m).</p>
+        <p>	Mas o que realmente é válida nessa analogia é que, durante o deslocamento, o ouvinte provavelmente presenciou um aumento ou diminuição
+            da sensação auditiva, pois nesse caminho, pode ter ocorrido interferência construtiva ou destrutiva.</p>
+        <p>	Mas como podemos afirmar se realmente o nosso observador presenciou tal fenômeno? Para isso, precisamos, além da diferença de percurso
+            do observador P ao presenciar o fenômeno, também do comprimento de onda emitido pelas fontes. É importante que presenciarmos tal fenômeno,
+            devemos ter fontes emitindo sons com mesmo comprimento de onda. </p>
+        <p>	Assim, para que exista uma interferência construtiva (IC) ou destrutiva (ID), no observador o valor da diferença de percurso deve ser
+            igual a um número inteiro (N) de λ⁄2</p>
+        <p>	Com essas informações, podemos utilizar a expressão abaixo para determinamos se houve interferência construtiva (IC) ou destrutiva (ID).
+        </p>
+        <p>FÓRMULA ?? ΔX=N∙λ/2</p>
+        <p>	OBSERVAÇÃO ( ): Sendo N um fator numérico que define se a onda é uma IC ou ID, iremos defini-la da seguinte forma para ondas de mesma fase:</p>
+        <p>	N par (0, 2, 4, 6...): Interferência Construtiva (IC)</p>
+        <p>	N ímpar (1, 3, 5, 7...): Interferência Destrutiva (ID)</p>
+        <p>	Caso as ondas estejam em oposição de fase, as condições anteriores se invertem.</p>
+        <p>	Voltando ao experimento de Young, este realizou o mesmo procedimento, numerando as IC com números pares e as ID com números impares, como na Figura 13.</p>
+        Figura 13 - NUMERAÇÃO EXPERIMENTO YOUNG
+	</string>
+
+	<string name="ttl_Interferencia_7">
+	    MAS AFINAL, É POSSÍVEL SOM + SOM GERAR SILÊNCIO?\n
+	</string>
+	<string name="txt_Interferencia_7_1">
+        <p>	De acordo com Harris (2007):</p>
+        <p>	O controle ativo de ruídos utiliza o principio da INTERFERÊNCIA como principio para seu funcionamento. </p>
+        <p>	A onda criada pelo dispositivo, tal como um fone de ouvido profissional, tem mesmo amplitude e frequência da onda do ambiente, porém, está em
+            oposição a fase dessa onda, ou seja, no momento que a crista do ruído encontra-se com o som produzido pelo dispositivo, esse som está no vale,
+            criando um INTERFERÊNCIA DESTRUTIVA (ID).</p>
+        <p>	Mas, para que esse dispositivo funcione, são necessários alguns elementos, como podemos observar na Figura 14.</p>
+        Figura 14 - FUNCIONAMENTO DISPOSITIVO CONTROLE ATIVO RUIDO
+        </string>
+    <string name="txt_Interferencia_7_2">
+        <lu>
+            <li><b>MICROFONE</b>: Um microfone acoplado ao dispositivo é necessário para que o mesmo capture os ruídos do ambiente;</li>
+            <li><b>CIRCUITO ELETRÔNICO</b>: Um circuito eletrônico é necessário para processar e definir as principais características da onda (amplitude e frequência), além de criar uma onda idêntica com fase oposta ao ruído do ambiente;</li>
+            <li><b>AUTO-FALANTES</b>: O \"Som Oposto\" criado pelo circuito eletrônico é devolvido ao ambiente, de forma a interferir no ruído original, atenuando sua intensidade;</li>
+            <li><b>BATERIA</b>: Para que os três elementos anteriores funcionem da forma adequada.</li>
+        </lu>
+            Usando esses componentes, dispositivos com cancelamento de ruído são capazes de proporcionar uma redução adicional de ruído de 20 decibels. Isso significa que cerca de 70% do ruído do ambiente é bloqueado, fazendo fones de ouvido com cancelamento de ruído ideal para companhias aéreas e de trem de viagens, ambientes de escritório aberto ou qualquer outro local com um alto nível de ruído de fundo.
+
+            Outros possíveis locais de aplicação desse tipo de tecnologia são as fábricas, que possuem maquinários que produzem altos índices de ruído no ambiente, podendo inclusive afetar a saúde de seus funcionários. O controle ativo é uma opção para minimizar os ruídos desse ambiente.
+	</string>
+
+	<string name="ttl_Interferencia_8">
+	    SINAL DE RÁDIO QUE INTRIGOU CIENTISTAS POR 17 ANOS VINHA DE UM APARELHO DE MICRO-ONDAS\n
+	</string>
+	<string name="txt_Interferencia_8">
+        <p>	Uma estudante da Universidade de Tecnologia de Swinburne, na Austrália, conseguiu decifrar o que astrônomos do Observatório de Parkes levaram 17
+            anos para descobrir. Um misterioso sinal de rádio, que parecia vir de todos os cantos do universo ao mesmo tempo, vinha, na verdade, de um aparelho
+            de micro-ondas.</p>
+        <p>	Os sinais eram registrados em picos de 1,4 gigahertz (GHz) que duravam apenas uma fração de segundo, uma ou duas vezes por ano, desde 1998. Análises
+            desse sinal indicavam que ele vinha de fora da Terra, e até, possivelmente, de galáxias extremamente distantes.</p>
+        <p>	Alguns cientistas, porém, defendiam a hipótese de que a fonte desses sinais era terrestre, já que pareciam vir de todos os lados ao mesmo tempo.
+            Além disso, os picos de radiação eram sempre registrados durante o dia, enquanto os funcionários do observatório estavam trabalhando no prédio.</p>
+        <p>	Estações de rádio e celulares também são proibidos nas imediações do observatório, o que descartava tais explicações. A universitária Emily Petroff,
+            que trabalha no observatório, decidiu colocar um monitor de interferência no telescópio para aumentar o seu poder de alcance.</p>
+        <p>	Dessa forma, os cientistas descobriram que, junto com os picos de 1,4 GHz, havia um pequeno sinal, ainda mais curto, acompanhando-os em 2,5 GHz.
+            Qual a origem mais óbvia para sinais nessa frequência? Um aparelho de micro-ondas.</p>
+        <p>	Investigando exatamente de onde vinham as ondas de 1,4 GHz, Petroff descobriu que, quando uma pessoa abre a porta do micro-ondas enquanto ele ainda
+            está operando, a máquina libera uma breve onda de radiação nessa frequência, além da comum em 2,5 GHz.</p>
+        <p>	Assim os cientistas descobriram que um funcionário do observatório tinha o costume de abrir a porta do micro-ondas antes de terminar de aquecer sua
+            refeição, o que acabava causando a misteriosa interferência. É, inclusive, por esse motivo que a maioria dos centros que observam e analisam sinais
+            do espaço proíbem o uso dessas máquinas em suas instalações.</p>
+        <p>	A descoberta, apesar de frustrante para quem passou quase duas décadas intrigado, tem seu valor científico. Agora os astrônomos podem descartar mais
+            essa explicação para futuros sinais misteriosos vindos do espaço.</p>
+	</string>
+
+	<string name="ttl_Interferencia_9">
+	    VÍDEO: EXPERIMENTO INTERFERÊNCIA DO SOM - CANAL CIÊNCIA CURIOSA\n
+	</string>
+	<string name="txt_Interferencia_9_1">
+        <p>	O Ciência Curiosa começou como um canal para divulgar experimentos de ciências de baixo custo. Com o tempo, o canal foi aumentando suas publicações
+            e hoje ele pretende divulgar ciência utilizando desde os antigos experimentos indo até a divulgação através de pinturas e outras obras de arte,
+            passando por tecnologias, visitas em campo, livros, filmes e muito mais.</p>
+        VÍDEO 01: Experimento Interferência do Som - Ondulatória Pt. 3
+	</string>
+
+    <!-- Ressonacia -->
+
+    <string name="ttl_Ressonacia_1">
+    TSUNAMI (Definições e causas)
+    </string>
+    <string name="txt_Ressonacia_1_1">
+        Você já deve te ouvido falar dos Tsunamis que atingiram a <b>Sri Lanka</b> em 2004  e o <b>Japão</b> em 2011.
+    </string>
+    <string name="txt_Ressonacia_1_2">
+    De acordo com o mini dicionário contemporâneo da língua portuguesa:
+        <b>TSUNAMI</b>. (Jap. / tsunâmi/ ) sm. Geog. Onda Gigantesca ou sucessão de ondas oceânicas que se deslocam em alta velocidade (podendo atingir mais de 700 km/h), decorrente de maremotos, erupções vulcânicas etc., e que têm grande poder destrutivo quando alcançam a região costeira.
+    </string>
+
+    <string name="ttl_Ressonacia_1_3">
+    <b>QUAIS SÃO OS EVENTOS QUE PODEM CAUSAR UM TSUNAMI?</b>
+    </string>
+    <string name="txt_Ressonacia_1_4">
+        Como um tsunami é uma série de ondas causadas pelo grande deslocamento de um certo volume de água no oceano, este pode ser formado por meio de um ou mais destes processos:
+        <lu>
+        <li>Terremotos fortes no fundo do oceano (ANIMAÇÃO 02)  (a mais comum);</li>
+        <li>Deslizamentos de terra para dentro ou debaixo da água (ANIMAÇÃO 03) , quedas de rochas, ou quedas de gelo (bastante comum e frequentemente associada com terremotos););</li>
+        <li>As erupções vulcânicas (ANIMAÇÃO 04)  (pouco frequente e muitas vezes associado com terremotos));</li>
+        <li>Queda de Meteoritos (ANIMAÇÃO 05)  (muito raro).);</li>
+        </lu>
+        Mas, afinal, como a física é capazes de explicar e compreender essas ondas gigantescas?
+    </string>
+
+    <string name="ttl_Ressonacia_2">
+        Refração
+    </string>
+    <string name="txt_Ressonacia_2_1">
+        <b>REFRAÇÃO</b>. [Do lat. refractione] S. f. [...]  2. Fís. Modificação da forma ou da direção de uma onda que, passando através da interface que separa dois meios, tem, em cada um deles, diferentes velocidades de propagação. (FERREIRA, 1986)
+
+        Como vimos na definição anterior, para que  um fenômeno seja definido como refração, além da mudança de meio e de velocidade, o <b>COMPRIMENTO DE ONDA</b> (λ)  também se altera.
+
+        É importante lembrar que a única grandeza que não altera seu valor é a <b>FREQUÊNCIA</b> (f) , pois essa característica é definida pela fonte emissora, ou seja, a fonte que produziu a onda.
+    </string>
+
+    <string name="ttl_Ressonacia_3">
+        LEIS DA REFRAÇÃO
+    </string>
+    <string name="txt_Ressonacia_3_1">
+        Da mesma forma que a <b>REFLEXÃO</b>, a refração é norteada por duas (2) leis:
+        <b>1ª LEI</b>: A onda incidente, a onda refletida e a <b>RETA NORMAL</b>  à superfície estão sobre um mesmo plano, ou seja, são coplanares.
+
+        <b>2ª LEI</b>: A razão entre o <b>seno do ângulo incidente</b> (sen i ̂) e o <b>seno do ângulo refretado </b>(sen r ̂) é igual a razão entre a <b>velocidade da onda no meio incidente</b> (v_1) e a <b>velocidade da onda no meio refratado</b> (v_2).
+    </string>
+    <string name="txt_Ressonacia_3_2">
+        Ainda podemos definir a segunda lei pensando em outra grandeza física: o <b>comprimento de onda</b> (λ).
+        Como a frequência permanece constante (f1 = f2) já que é definida pela fonte emissora),
+        e lembrando que a velocidade de propagação de uma onda é a razão entre o comprimento de onda e
+        a frequência (v=λ∙f) chegamos a seguinte expressão:
+    </string>
+
+    <string name="ttl_Ressonacia_4">
+        REFRAÇÃO DE ONDAS EM UMA CORDA
+    </string>
+    <string name="txt_Ressonacia_4_1">
+        Como vimos em <b>REFLEXÃO DE ONDAS EM UMA CORDA</b>, a velocidade de propagação desse pulso depende da RAIZ QUADRADA ENTRE A FORÇA DE TRAÇÃO NA CORDA E A SUA DENSIDADE LINEAR .
+
+        Mas e se este pulso mudar de meio ou, no caso, mudar de corda? Imagine que  duas cordas com diferentes densidades lineares (mesmo comprimento, porém, com massas distintas) estão unidas e um pulso é criado em uma delas. O que irá acontecer quando esse pulso atingir o ponto que une essas duas cordas?
+    </string>
+    <string name="txt_Ressonacia_4_2">
+        Observando	as animações, verificamos que quando ocorre refração nas cordas, a frequência (f) e a FASE DO PULSO  não se alteram.
+
+        Na primeira animação (pulso se propagando da corda mais fina para a corda mais grossa), verificamos que a velocidade do pulso e o comprimento de onda diminuem, já que a corda tem maior massa e o pulso encontra maior resistência para se propagar.
+
+        Já na segunda animação (pulso se propagando da corda mais grossa para a corda mais fina), a velocidade do pulso e o comprimento de onda aumentam.
+
+        Mas essas animações só mostram a refração da onda. Em geral, refração e reflexão são fenômenos que ocorrem de forma simultânea.
+    </string>
+    <string name="txt_Ressonacia_4_3">
+        Com estas animações, podemos perceber que:
+        Quando um pulso se propaga de uma corda menos densa (corda fina) para uma corda mais densa (corda grossa), temos:
+        <lu>
+        <li>Reflexão com inversão de fase;</li>
+        <li>Refração com diminuição de velocidade e comprimento de onda.</li>
+        </lu>
+        Quando um pulso se propaga de uma corda mais densa (corda grossa) para uma corda menos densa (corda fina), temos:
+        <lu>
+        <li>Reflexão com manutenção da fase;</li>
+        <li>Refração com aumento de velocidade e comprimento de onda.</li>
+        </lu>
+    </string>
+
+    <string name="ttl_Ressonacia_5">
+        MAS AFINAL, QUAL É A RELAÇÃO ENTRE A REFRAÇÃO E OS TSUNAMIS?
+    </string>
+    <string name="txt_Ressonacia_5_1">
+        Quando dizemos que uma onda muda de meio, esta onda não precisa, por exemplo, propagar-se do ar para a água.
+        Essa mudança pode ocorrer devido a uma diferença de profundidade no recipiente onde se encontra um líquido.
+        Na animação abaixo, podemos observar duas regiões:
+
+    </string>
+    <string name="txt_Ressonacia_5_2">
+        Na região mais profunda, as ondas tem uma velocidade (v_1) e um comprimento de onda (λ_1). Ao mudar para a região mais rasa, o comprimento de onda (λ_2) e a velocidade (v_2) diminuem.
+        Mas porque mesmo com a diminuição da velocidade e comprimento de onda, as ondas de um tsunami chegam ao litoral com grande <b>AMPLITUDE</b> ?
+    </string>
+    <string name="txt_Ressonacia_5_3">
+        Quando ocorre a formação de um Tsunami no meio do oceano, devido a uma erupção vulcânica ou ainda por um cisalhamento de placas tectônicas, ocorre a liberação de uma grande quantidade de energia, que se propaga através das águas do oceano, formando centenas de pulsos simultâneos. Quando os pulsos que estão na parte dianteira da onda perdem velocidade ao chegar a parte mais rasa (Litoral), as ondas que estão vindo na parte traseira acabam se empilhando com as ondas dianteiras,  aumentando a amplitude dos pulsos.
+    </string>
+
+    <string name="ttl_Ressonacia_6">
+        EXISTE ALGUMA PROTEÇÃO CONTRA TSUNAMIS?
+    </string>
+    <string name="txt_Ressonacia_6_1">
+        Ainda não existe uma proteção perfeita contra os Tsunamis, porém há alguns projetos que podem minimizar os efeitos do fenômeno.
+        Uma nova proposta, noticiada pela Revista Galileu  é um quebra-mar flutuante que está sendo construído no Japão. As principais vantagens desse projeto são que este não irá prejudicar o transporte marítimo e também não ira comprometer o visual da praia.
+        Isso é possível devido a um sistema de bolhas de ar que pode elevar esse quebra-mar , que está inicialmente no fundo do oceano até uma altura de 7 metros em relação a superfície.
+    </string>
+    <string name="txt_Ressonacia_6_2">
+        Quando o alarme de Tsunamis é acionado, é bombeado ar do litoral para o quebra-mar, que com a formação das bolhas o torna flutuante. Passado o perigo, o ar é retirado e as colunas submergem .
+    </string>
+
+    <string name="ttl_Ressonacia_7">
+        NOÇÕES BÁSICAS DE SEGURANÇA EM CASO DE TSUNAMI
+    </string>
+    <string name="txt_Ressonacia_7_1">
+        De acordo com o site http://whyfiles.org/2011/tsunami-the-killer-wave/ , algumas noções básicas podem salvar a vida de pessoas que estão em áreas com risco de tsunami, sendo que a rápida ação e uma política publica de conscientização dos habitantes locais podem reduzir o número de mortos.
+        I.	Esteja atento a tremores e terremotos fortes, pois esses podem desencadear um Tsunami. Caso esteja perto do mar, corra em direção a um lugar com maior altitude no interior;
+        II.	Preste muita atenção nos avisos, fique atento às estações de rádio;
+        III.	NUNCA vá até à praia para assistir a um tsunami - eles se movem muito mais rápido do que você pode correr. As pessoas acabam morrendo ao fazendo isso;
+        IV.	A maioria das estruturas na zona de perigo oferecem pouca ou nenhuma proteção. No entanto, os andares mais elevados de hotéis de concreto armado pode fornecer refúgio, isso se você não tiver tempo para ir até o interior ou para terrenos mais elevados;
+        V.	Um tsunami não se limita a apenas uma onda, ele é uma série de ondas. Não vá perto da água até ouvir o de autoridades de emergência que já é seguro.
+    </string>
+
+    <string name="ttl_Ressonacia_8">
+        VÍDEO: COMO FUNCIONAM OS TSUNAMIS
+    </string>
+    <string name="txt_Ressonacia_8_1">
+        Sobre o TED ED (Texto extraído do site https://www.ted.com/# em 11 Set. 2015)
+        TED é uma plataforma de ideias que merecem ser espalhadas. Iniciado em 1984 como uma conferência onde a tecnologia, entretenimento e design convergiram, TED compartilha ideias de amplos aspectos - da ciência empresariais até questões globais - em mais de 100 línguas. Enquanto isso, eventos independentes TEDx ajudar a compartilhar ideias em comunidades ao redor do mundo.
+    </string>
+
+    <string name="ttl_Ressonacia_9">
+    A CIÊNCIA NA NATUREZA E NO DIA A DIA
+    </string>
+    <string name="txt_Ressonacia_9_1">
+    <b>FIBRA ÓPTICA</b>
+        Graças ao advento da internet na década de 70, foi possível uma revolução na forma que trocamos informações com outras pessoas e até mesmo com sistemas informatizados, tais como bancos ou serviços de atendimento de lojas ou órgãos públicos.
+        Mas como transmitir informações de forma tão rápida e segura? Essa inovação foi possível através da utilização da fibra óptica
+    </string>
+    <string name="txt_Ressonacia_9_2">
+    Mas afinal, como funciona a fibra óptica?
+        O principio físico que faz com que a fibra ótica seja um elemento cada vez mais utilizado é que a informação é capaz de viajar na velocidade da luz (cerca de 300.000 km/s).
+        Para termos uma ideia, nessa velocidade seria possível dar cerca de 7 voltas na Terra.
+        A fibra óptica nada mais é que o caminho pelo qual a luz irá percorrer entre dois pontos. Dessa forma, o feixe de luz acompanha a curvatura do material. A razão pela qual a luz consegue seguir uma trajetória curva na fibra óptica é devido ao fenômeno da refração.
+        Quando um raio de luz passa de um meio de maior para um meio de menor <b>ÍNDICE DE REFRAÇÃO</b> , a luz sofre um desvio na sua trajetória, afastando-se da <b>RETA NORMAL</b> . A medida que vamos aumentando o ângulo de incidência (i ̂), o ângulo de refração (r ̂) também aumenta, até que para um determinado valor do ângulo i ̂, o raio refratado irá sair rasante a superfície (r ̂=90°). Esse valor do ângulo i ̂ é chamado de <b>ÂNGULO LIMITE</b>.
+    </string>
+    <string name="txt_Ressonacia_9_3">
+        Quando o raio incidir na superfície de separação dos meios com ângulo maior que o ângulo limite, o feixe luminoso não irá mais mudar de meio, ocorrendo o fenômeno chamado de <b>REFLEXÃO TOTAL</b>.
+    </string>
+    <string name="txt_Ressonacia_9_4">
+        Na fibra óptica, quando o raio de luz é emitido para que ocorra a transmissão de dados, o raio incidente é emitido com ângulo incidente maior que o ângulo limite, possibilitando que o feixe de luz contendo as informações realize sucessivas reflexões no interior da fibra óptica, dessa forma, acompanhando sua curvatura.
+    </string>
+
     <string name="credits_team">Bruno Ferrari\nBruno Oliveira\nParticipante1\nParticipante2\nParticipante3</string>
 </resources>
+

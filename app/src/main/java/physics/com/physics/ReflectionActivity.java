@@ -6,9 +6,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.View;
 
 import physics.com.physics.adapters.ViewPagerAdapter;
 import physics.com.physics.fragments.ReflectionMaterialFragment;
+import physics.com.physics.fragments.ReflectionQuestionsFragment;
 import physics.com.physics.fragments.ReflectionTestFragment;
 import physics.com.physics.fragments.ReflectionVideosFragment;
 
@@ -42,8 +44,12 @@ public class ReflectionActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ReflectionMaterialFragment(), getResources().getString(R.string.tab_material));
         adapter.addFragment(new ReflectionVideosFragment(), getResources().getString(R.string.tab_videos));
-        adapter.addFragment(new ReflectionTestFragment(), getResources().getString(R.string.tab_tests));
+        adapter.addFragment(new ReflectionQuestionsFragment(), getResources().getString(R.string.tab_tests));
         viewPager.setAdapter(adapter);
+    }
+
+    public void onRadioButtonClicked(View v){
+
     }
 
     @Override

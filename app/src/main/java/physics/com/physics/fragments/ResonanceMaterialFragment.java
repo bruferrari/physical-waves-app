@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import physics.com.physics.R;
 import physics.com.physics.helper.ResonanceHelper;
+import physics.com.physics.helper.ResonanceMaterialHelper;
 
 /**
  * Created by bruno on 04/11/15.
@@ -17,6 +18,7 @@ public class ResonanceMaterialFragment extends Fragment {
 
     private View view;
     private ResonanceHelper helper;
+    private ResonanceMaterialHelper materialHelper;
 
     public ResonanceMaterialFragment() {
         //Empty constructor
@@ -28,7 +30,9 @@ public class ResonanceMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.resonance_material_layout, container, false);
 
         helper = new ResonanceHelper(view);
-        helper.initializeUIElements();
+        materialHelper = new ResonanceMaterialHelper(view);
+        materialHelper.initializeUIElements();
+        //helper.initializeUIElements();
 
         return view;
     }

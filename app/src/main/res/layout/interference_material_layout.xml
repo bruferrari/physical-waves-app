@@ -15,37 +15,658 @@
         android:layout_marginLeft="25dp">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/content_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lorem Ipsum"
+            android:text="@string/mdl_Interferencia"
             android:textSize="26sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
 
         <ScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/title"
+            android:layout_below="@+id/content_title"
             android:layout_marginTop="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <!-- Primeiro Assunto -->
+
                 <TextView
-                    android:id="@+id/title_aprendizagem"
+                    android:id="@+id/chapter_title_01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/ttl_Interferencia_1"
                     android:textSize="22sp"/>
 
                 <TextView
-                    android:id="@+id/text_content"
+                    android:id="@+id/text_content_01"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="MATERIAL DE INTERFERÊNCIA AQUI!!"
+                    android:text="@string/txt_Interferencia_1"
                     android:textSize="20sp"
-                    android:layout_below="@id/title_aprendizagem"/>
+                    android:layout_below="@id/chapter_title_01"/>
+
+                <!-- Segundo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01"/>
+
+                <TextView
+                    android:id="@+id/text_content_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_02"/>
+
+                <!-- Terceiro Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_02"/>
+
+                <TextView
+                    android:id="@+id/text_content_03_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_3_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_03"/>
+
+                <WebView
+                    android:id="@+id/gif_01"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_03_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_03_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_3_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_01"/>
+
+                <WebView
+                    android:id="@+id/gif_02"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_03_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_03_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_3_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_02"/>
+
+                <WebView
+                    android:id="@+id/gif_03"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_03_3"/>
+
+                <!-- Quarto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_03"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_4_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_04"/>
+
+                <WebView
+                    android:id="@+id/gif_04"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_04_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_4_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_04"/>
+
+                <WebView
+                    android:id="@+id/gif_05"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_04_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_4_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_05"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_04_3">
+
+                    <ProgressBar
+                        android:id="@+id/progress_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_01"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_01"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_04_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_4_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_01"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_04_4">
+
+                    <ProgressBar
+                        android:id="@+id/progress_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_02"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_02"/>
+
+                </RelativeLayout>
+
+                <!-- Quinto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_5"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_02"/>
+
+                <TextView
+                    android:id="@+id/text_content_05_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_05"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_03"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_03"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_03"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_2">
+
+                    <ProgressBar
+                        android:id="@+id/progress_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_04"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_04"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_04"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_3">
+
+                    <ProgressBar
+                        android:id="@+id/progress_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_05"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_05"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_05"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_4">
+
+                    <ProgressBar
+                        android:id="@+id/progress_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_06"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_06"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_5"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_06"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_5">
+
+                    <ProgressBar
+                        android:id="@+id/progress_07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_07"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_07"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_6"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_07"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_6">
+
+                    <ProgressBar
+                        android:id="@+id/progress_08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_08"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_08"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_7"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_08"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_09"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_7">
+
+                    <ProgressBar
+                        android:id="@+id/progress_09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_09"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_09"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_09"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_05_8">
+
+                    <ProgressBar
+                        android:id="@+id/progress_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_10"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_10"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_05_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_5_9"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_10"/>
+
+                <!-- Sexto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_6"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_05_9"/>
+
+                <TextView
+                    android:id="@+id/text_content_06_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_6_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_06"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_06_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_11"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_11"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_06_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_6_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_11"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_06_2">
+
+                    <ProgressBar
+                        android:id="@+id/progress_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_12"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_12"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_06_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_6_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_12"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_06_3">
+
+                    <ProgressBar
+                        android:id="@+id/progress_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_13"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_13"/>
+
+                </RelativeLayout>
+
+                <!-- Setimo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_7"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_13"/>
+
+                <TextView
+                    android:id="@+id/text_content_07_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_7_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_07"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_07_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_14"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_14"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_07_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_7_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_14"/>
+
+                <!-- Oitavo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_07_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_08"/>
+
+                <!-- Nono Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Interferencia_9"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_08"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Interferencia_9_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_9"/>
+
             </RelativeLayout>
 
 
@@ -53,5 +674,4 @@
 
     </RelativeLayout>
 </RelativeLayout>
-
 

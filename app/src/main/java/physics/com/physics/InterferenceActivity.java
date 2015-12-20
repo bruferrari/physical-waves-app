@@ -6,11 +6,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.View;
 
 import physics.com.physics.adapters.ViewPagerAdapter;
 import physics.com.physics.fragments.DiffractionMaterialFragment;
 import physics.com.physics.fragments.DiffractionVideosFragment;
 import physics.com.physics.fragments.InterferenceMaterialFragment;
+import physics.com.physics.fragments.InterferenceQuestionsFragment;
 import physics.com.physics.fragments.InterferenceVideosFragment;
 import physics.com.physics.fragments.OneFragment;
 import physics.com.physics.fragments.TwoFragment;
@@ -45,8 +47,12 @@ public class InterferenceActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new InterferenceMaterialFragment(), getResources().getString(R.string.tab_material));
         adapter.addFragment(new InterferenceVideosFragment(), getResources().getString(R.string.tab_videos));
-        adapter.addFragment(new OneFragment(), getResources().getString(R.string.tab_tests));
+        adapter.addFragment(new InterferenceQuestionsFragment(), getResources().getString(R.string.tab_tests));
         viewPager.setAdapter(adapter);
+    }
+
+    public void onRadioButtonClicked(View v){
+
     }
 
     @Override

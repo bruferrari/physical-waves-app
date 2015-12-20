@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import physics.com.physics.R;
 import physics.com.physics.helper.ReflectionHelper;
+import physics.com.physics.helper.ReflectionMaterialHelper;
 
 /**
  * Created by bruno on 31/10/15.
@@ -17,6 +18,7 @@ public class ReflectionMaterialFragment extends Fragment {
 
     private View view;
     private ReflectionHelper helper;
+    private ReflectionMaterialHelper materialHelper;
 
     public ReflectionMaterialFragment() {
 
@@ -33,7 +35,9 @@ public class ReflectionMaterialFragment extends Fragment {
         view = inflater.inflate(R.layout.reflection_material_layout, container, false);
 
         helper = new ReflectionHelper(view);
-        helper.initializeUIElements();
+        materialHelper = new ReflectionMaterialHelper(view);
+        materialHelper.initializeUIElements();
+        //helper.initializeUIElements();
 
         return view;
     }

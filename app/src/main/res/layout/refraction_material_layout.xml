@@ -15,136 +15,651 @@
         android:layout_marginLeft="25dp">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/content_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lorem Ipsum"
+            android:text="@string/mdl_Refracao"
             android:textSize="26sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
 
         <ScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/title"
+            android:layout_below="@+id/content_title"
             android:layout_marginTop="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <!-- Primeiro Assunto -->
+
                 <TextView
-                    android:id="@+id/title_aprendizagem"
+                    android:id="@+id/chapter_title_01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/ttl_Refracao_1"
                     android:textSize="22sp"/>
 
                 <TextView
-                    android:id="@+id/text_content"
+                    android:id="@+id/text_content_01"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/dummy"
+                    android:text="@string/txt_Refracao_1"
                     android:textSize="20sp"
-                    android:layout_below="@id/title_aprendizagem"/>
+                    android:layout_below="@id/chapter_title_01"/>
 
                 <RelativeLayout
+                    android:id="@+id/RL_01"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/text_content">
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_01">
 
                     <ProgressBar
-                        android:id="@+id/refraction_material_pb1"
+                        android:id="@+id/progress_01"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/image_01"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_01"/>
+
+                    <ProgressBar
+                        android:id="@+id/progress_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/image_01"/>
+
+                    <ImageView
+                        android:id="@+id/image_02"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_02"/>
+
+                    <ProgressBar
+                        android:id="@+id/progress_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/image_02"/>
+
+                    <ImageView
+                        android:id="@+id/image_03"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_03"/>
+
+                    <ProgressBar
+                        android:id="@+id/progress_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/image_03"/>
+
+                    <ImageView
+                        android:id="@+id/image_04"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_04"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_01_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_1_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_01"/>
+
+                <WebView
+                    android:id="@+id/gif_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/text_content_01_1"/>
+
+                <TextView
+                    android:id="@+id/text_content_01_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_1_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_01"/>
+
+                <WebView
+                    android:id="@+id/gif_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/text_content_01_2"/>
+
+                <WebView
+                    android:id="@+id/gif_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/gif_02"/>
+
+                <WebView
+                    android:id="@+id/gif_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/gif_03"/>
+
+                <WebView
+                    android:id="@+id/gif_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/gif_04"/>
+
+                <TextView
+                    android:id="@+id/text_content_01_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_1_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_05"/>
+
+                <!-- Segundo Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_01_3"/>
+
+                <TextView
+                    android:id="@+id/text_content_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_02"/>
+
+                <!-- Terceiro Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_02"/>
+
+                <TextView
+                    android:id="@+id/text_content_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_03"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_03">
+
+                    <ProgressBar
+                        android:id="@+id/progress_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:layout_centerInParent="true"/>
 
                     <ImageView
-                        android:id="@+id/image_test"
-                        android:layout_width="200dp"
-                        android:layout_height="300dp" />
+                        android:id="@+id/image_05"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_05"/>
 
+                    <ProgressBar
+                        android:id="@+id/progress_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/image_05"/>
+
+                    <ImageView
+                        android:id="@+id/formula_02"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_13"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_03_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_3_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_02"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_03_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/formula_03"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_14"/>
+
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/gif_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/RL_03"/>
+
+                <!-- Quarto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_06"/>
+
+                <TextView
+                    android:id="@+id/text_content_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_4"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_04"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_04">
+
+                    <ProgressBar
+                        android:id="@+id/progress_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_06"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_06"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_04_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_4_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_04"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_04_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_07"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_07"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_04_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_4_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_05"/>
+
+                <WebView
+                    android:id="@+id/gif_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/text_content_04_2"/>
+
+                <WebView
+                    android:id="@+id/gif_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/gif_07"/>
+
+                <TextView
+                    android:id="@+id/text_content_04_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_4_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_08"/>
+
+                <!-- Quinto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_5"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_04_3"/>
+
+                <TextView
+                    android:id="@+id/text_content_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_5"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_05"/>
+
+                <WebView
+                    android:id="@+id/gif_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/text_content_05"/>
+
+
+                <TextView
+                    android:id="@+id/text_content_05_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_5_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_09"/>
+
+                <WebView
+                    android:id="@+id/gif_10"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_05_1"/>
+
+
+                <TextView
+                    android:id="@+id/text_content_05_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_5_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_10"/>
+
+                <!-- Sexto Assunto -->
+
+                <TextView
+                    android:id="@+id/chapter_title_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_6"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_05_2"/>
+
+                <TextView
+                    android:id="@+id/text_content_06_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_6_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_06"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_06_1">
+
+                    <ProgressBar
+                        android:id="@+id/progress_08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_08"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_08"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_06_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_6_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_06"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_06_2">
+
+                    <ProgressBar
+                        android:id="@+id/progress_09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_09"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_09"/>
 
                 </RelativeLayout>
 
 
+                <!-- Setimo Assunto -->
 
+                <TextView
+                    android:id="@+id/chapter_title_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_7"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_07"/>
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/image_test2"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/text_content" />-->
+                <TextView
+                    android:id="@+id/text_content_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_7"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_07"/>
 
-                <!--<ProgressBar-->
-                    <!--android:id="@+id/refraction_material_pb2"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"/>-->
+                <!-- Oitavo Assunto -->
 
+                <TextView
+                    android:id="@+id/chapter_title_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_07"/>
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/image_test3"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/image_test2" />-->
+                <TextView
+                    android:id="@+id/text_content_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_8"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_08"/>
 
-                <!--<ProgressBar-->
-                    <!--android:id="@+id/refraction_material_pb3"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"/>-->
+                <!-- Nono Assunto -->
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/image_test4"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/image_test3" />-->
+                <TextView
+                    android:id="@+id/chapter_title_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ttl_Refracao_9"
+                    android:textSize="20sp"
+                    android:layout_below="@id/text_content_08"/>
 
-                <!--<ProgressBar-->
-                    <!--android:id="@+id/refraction_material_pb4"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"/>-->
+                <TextView
+                    android:id="@+id/text_content_09_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_9_1"
+                    android:textSize="20sp"
+                    android:layout_below="@id/chapter_title_9"/>
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/image_test5"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/image_test4" />-->
+                <RelativeLayout
+                    android:id="@+id/RL_09"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_09_1">
 
-                <!--<com.felipecsl.gifimageview.library.GifImageView-->
-                    <!--android:id="@+id/gifImageView"-->
-                    <!--android:layout_width="300dp"-->
-                    <!--android:layout_height="300dp"-->
-                    <!--android:layout_toRightOf="@+id/image_test"-->
-                    <!--android:layout_below="@+id/text_content"/>-->
+                    <ProgressBar
+                        android:id="@+id/progress_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_10"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_10"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_09_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_9_2"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_09"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text_content_09_2">
+
+                    <ProgressBar
+                        android:id="@+id/progress_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/image_11"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_11"/>
+
+                    <ProgressBar
+                        android:id="@+id/progress_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/formula_04"
+                        android:layout_width="360dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/progress_15"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_content_09_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_9_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/RL_08"/>
 
                 <WebView
-                    android:id="@+id/web_view_test"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    />
+                    android:id="@+id/gif_11"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_09_3"/>
+
+                <TextView
+                    android:id="@+id/text_content_09_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_Refracao_9_3"
+                    android:textSize="20sp"
+                    android:layout_below="@id/gif_11"/>
 
                 <WebView
-                    android:id="@+id/web_view_test2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/web_view_test"/>
-
-                <WebView
-                    android:id="@+id/web_view_test3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/web_view_test2"/>
-
-                <WebView
-                    android:id="@+id/web_view_test4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/web_view_test3"/>
+                    android:id="@+id/gif_12"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_content_09_4"/>
 
             </RelativeLayout>
-
 
         </ScrollView>
 
